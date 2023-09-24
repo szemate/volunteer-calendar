@@ -6,7 +6,7 @@ CREATE TABLE sessions(
     date date NOT NULL,
     slot_type integer NOT NULL,
     FOREIGN KEY (volunteer_id) REFERENCES volunteers(id),
-    CONSTRAINT sessions_key PRIMARY KEY(id, volunteer_id)
+    CONSTRAINT sessions_key PRIMARY KEY (id, volunteer_id)
 );
 
 INSERT INTO sessions(date, slot_type)
