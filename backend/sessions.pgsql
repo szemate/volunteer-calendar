@@ -1,12 +1,11 @@
 DROP TABLE IF EXISTS sessions;
 
 CREATE TABLE sessions(
-    id serial,
+    id serial PRIMARY KEY,
     volunteer_id integer,
     date date NOT NULL,
     slot_type integer NOT NULL,
-    FOREIGN KEY (volunteer_id) REFERENCES volunteers(id),
-    CONSTRAINT sessions_key PRIMARY KEY (id, volunteer_id)
+    FOREIGN KEY (volunteer_id) REFERENCES volunteers(id)
 );
 
 INSERT INTO sessions(date, slot_type)
