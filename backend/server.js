@@ -21,7 +21,7 @@ const db = new Pool({
   database: process.env.POSTGRES_DATABASE,
   password: process.env.POSTGRES_PASSWORD,
   port: process.env.POSTGRES_PORT,
-  // ssl: true,
+  ssl: true,
 });
 
 // GET "/"
@@ -35,7 +35,25 @@ db.connect(function (err) {
 // This endpoint is used to get all the sessions using SQL queries
 
 app.get("/sessions", (req, res) => {
-  db.query(`SELECT * FROM sessions ORDER BY date`)
+  db.query(
+    `SELECT TO_CHAR(date, 'DD-MM-YYYY') AS formatted_date,
+       TO_CHAR(date, 'Day') AS day,
+       slot_type,
+       volunteer_id
+    FROM sessions
+    ORDER BY date;`
+  )
+    .then((result) => res.json(result.rows))
+    .catch((error) => {
+      console.log(error.message);
+      res.status(500).send("Database Error");
+    });
+});
+
+// This endpoint is used to get all the sessions using SQL queries
+
+app.get("/volunteers", (req, res) => {
+  db.query(`SELECT * FROM volunteers;`)
     .then((result) => res.json(result.rows))
     .catch((error) => {
       console.log(error.message);
