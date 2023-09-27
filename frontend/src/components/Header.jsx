@@ -10,9 +10,7 @@ function Header() {
           alt="Good deed app logo"
           className="w-13 ml-6 mt-3 h-9 sm:mx-7 sm:h-16 sm:w-24"
         />
-        <h1 className=" text-2xl lg:text-5xl font-bold m-3">
-          Good Deeds App
-        </h1>
+        <h1 className=" text-2xl lg:text-5xl font-bold m-3">Good Deeds App</h1>
       </header>
     </div>
   );
