@@ -2,169 +2,197 @@
   {
     "formatted_date": "01-09-2023",
     "day": "Friday   ",
-    "slot_type": "morning",
+    "session_type": "morning",
+    "session_status": "booked",
     "volunteer_id": null
   },
   {
     "formatted_date": "01-09-2023",
     "day": "Friday   ",
-    "slot_type": "evening",
+    "session_type": "evening",
+    "session_status": "booked",
     "volunteer_id": null
   },
   {
     "formatted_date": "02-09-2023",
     "day": "Saturday ",
-    "slot_type": "morning",
+    "session_type": "morning",
+    "session_status": "booked",
     "volunteer_id": null
   },
   {
     "formatted_date": "02-09-2023",
     "day": "Saturday ",
-    "slot_type": "evening",
+    "session_type": "evening",
+    "session_status": "booked",
     "volunteer_id": null
   },
   {
     "formatted_date": "03-09-2023",
     "day": "Sunday   ",
-    "slot_type": "morning",
+    "session_type": "morning",
+    "session_status": "bagged",
     "volunteer_id": null
   },
   {
     "formatted_date": "03-09-2023",
     "day": "Sunday   ",
-    "slot_type": "evening",
+    "session_type": "evening",
+    "session_status": "available",
     "volunteer_id": null
   },
   {
     "formatted_date": "04-09-2023",
     "day": "Monday   ",
-    "slot_type": "morning",
+    "session_type": "morning",
+    "session_status": "booked",
     "volunteer_id": null
   },
   {
     "formatted_date": "04-09-2023",
     "day": "Monday   ",
-    "slot_type": "evening",
+    "session_type": "evening",
+    "session_status": "booked",
     "volunteer_id": null
   },
   {
     "formatted_date": "05-09-2023",
     "day": "Tuesday  ",
-    "slot_type": "morning",
+    "session_type": "morning",
+    "session_status": "bagged",
     "volunteer_id": null
   },
   {
     "formatted_date": "05-09-2023",
     "day": "Tuesday  ",
-    "slot_type": "evening",
+    "session_type": "evening",
+    "session_status": "booked",
     "volunteer_id": null
   },
   {
     "formatted_date": "06-09-2023",
     "day": "Wednesday",
-    "slot_type": "morning",
+    "session_type": "morning",
+    "session_status": "bagged",
     "volunteer_id": null
   },
   {
     "formatted_date": "06-09-2023",
     "day": "Wednesday",
-    "slot_type": "evening",
+    "session_type": "evening",
+    "session_status": "booked",
     "volunteer_id": null
   },
   {
     "formatted_date": "07-09-2023",
     "day": "Thursday ",
-    "slot_type": "morning",
+    "session_type": "morning",
+    "session_status": "booked",
     "volunteer_id": null
   },
   {
     "formatted_date": "07-09-2023",
     "day": "Thursday ",
-    "slot_type": "evening",
+    "session_type": "evening",
+    "session_status": "bagged",
     "volunteer_id": null
   },
   {
     "formatted_date": "08-09-2023",
     "day": "Friday   ",
-    "slot_type": "morning",
+    "session_type": "morning",
+    "session_status": "booked",
     "volunteer_id": null
   },
   {
     "formatted_date": "08-09-2023",
     "day": "Friday   ",
-    "slot_type": "evening",
+    "session_type": "evening",
+    "session_status": "available",
     "volunteer_id": null
   },
   {
     "formatted_date": "09-09-2023",
     "day": "Saturday ",
-    "slot_type": "morning",
+    "session_type": "morning",
+    "session_status": "booked",
     "volunteer_id": null
   },
   {
     "formatted_date": "09-09-2023",
     "day": "Saturday ",
-    "slot_type": "evening",
+    "session_type": "evening",
+    "session_status": "available",
     "volunteer_id": null
   },
   {
     "formatted_date": "10-09-2023",
     "day": "Sunday   ",
-    "slot_type": "morning",
+    "session_type": "morning",
+    "session_status": "booked",
     "volunteer_id": null
   },
   {
     "formatted_date": "10-09-2023",
     "day": "Sunday   ",
-    "slot_type": "evening",
+    "session_type": "evening",
+    "session_status": "booked",
     "volunteer_id": null
   },
   {
     "formatted_date": "11-09-2023",
     "day": "Monday   ",
-    "slot_type": "morning",
+    "session_type": "morning",
+    "session_status": "available",
     "volunteer_id": null
   },
   {
     "formatted_date": "11-09-2023",
     "day": "Monday   ",
-    "slot_type": "evening",
+    "session_type": "evening",
+    "session_status": "available",
     "volunteer_id": null
   },
   {
     "formatted_date": "12-09-2023",
     "day": "Tuesday  ",
-    "slot_type": "morning",
+    "session_type": "morning",
+    "session_status": "booked",
     "volunteer_id": null
   },
   {
     "formatted_date": "12-09-2023",
     "day": "Tuesday  ",
-    "slot_type": "evening",
+    "session_type": "evening",
+    "session_status": "available",
     "volunteer_id": null
   },
   {
     "formatted_date": "13-09-2023",
     "day": "Wednesday",
-    "slot_type": "morning",
+    "session_type": "morning",
+    "session_status": "booked",
     "volunteer_id": null
   },
   {
     "formatted_date": "13-09-2023",
     "day": "Wednesday",
-    "slot_type": "evening",
+    "session_type": "evening",
+    "session_status": "available",
     "volunteer_id": null
   },
   {
     "formatted_date": "14-09-2023",
     "day": "Thursday ",
-    "slot_type": "morning",
+    "session_type": "morning",
+    "session_status": "booked",
     "volunteer_id": null
   },
   {
     "formatted_date": "14-09-2023",
     "day": "Thursday ",
-    "slot_type": "evening",
+    "session_type": "evening",
+    "session_status": "available",
     "volunteer_id": null
   }
 ]
