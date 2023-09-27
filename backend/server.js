@@ -61,4 +61,27 @@ app.get("/volunteers", (req, res) => {
     });
 });
 
+// This endpoint is used to update status of a session (bagged, open or taken from volunteers POV and open or taken from managers POV) with a given volunteer ID
+
+app.put("/sessions/:id", (req, res) => {
+  const volunteerId = Number(req.params.id);
+  const body = req.body;
+  const requestedDate = body.date;
+  const requestedSlotType = body.slot_type;
+
+  // get date and slot type from client request
+  console.log("volunteer id --->", volunteerId);
+  console.log("body--->", body);
+
+  db.query(
+    "UPDATE sessions SET volunteer_id = $1 WHERE date = $2 AND slot_type = $3",
+    [volunteerId, requestedDate, requestedSlotType]
+  )
+    .then((result) => res.send(result.rows[0]))
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json({ error: err });
+    });
+});
+
 app.listen(port, () => console.log(`Listening on port ${port}`));
