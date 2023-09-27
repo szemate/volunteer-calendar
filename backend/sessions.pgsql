@@ -4,93 +4,94 @@ CREATE TABLE sessions(
     id serial PRIMARY KEY,
     volunteer_id integer,
     date date NOT NULL,
-    slot_type integer NOT NULL,
+    session_type varchar(25) NOT NULL,
+    session_status varchar(25) NOT NULL,
     FOREIGN KEY (volunteer_id) REFERENCES volunteers(id)
 );
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-01', 0);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-01', 'morning', 'booked');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-01', 1);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-01', 'evening', 'booked');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-02', 0);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-02', 'morning', 'booked');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-02', 1);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-02', 'evening', 'booked');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-03', 0);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-03', 'morning', 'bagged');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-03', 1);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-03', 'evening', 'available');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-04', 0);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-04', 'morning', 'booked');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-04', 1);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-04', 'evening', 'booked');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-05', 0);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-05', 'morning', 'bagged');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-05', 1);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-05', 'evening', 'booked');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-06', 0);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-06', 'morning', 'bagged');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-06', 1);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-06', 'evening', 'booked');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-07', 0);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-07', 'morning', 'booked');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-07', 1);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-07', 'evening', 'bagged');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-08', 0);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-08', 'morning', 'booked');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-08', 1);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-08', 'evening', 'available');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-09', 0);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-09', 'morning', 'booked');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-09', 1);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-09', 'evening', 'available');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-10', 0);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-10', 'morning', 'booked');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-10', 1);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-10', 'evening', 'booked');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-11', 0);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-11', 'morning', 'available');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-11', 1);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-11', 'evening', 'available');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-12', 0);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-12', 'morning', 'booked');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-12', 1);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-12', 'evening', 'available');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-13', 0);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-13', 'morning', 'booked');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-13', 1);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-13', 'evening', 'available');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-14', 0);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-14', 'morning', 'booked');
 
-INSERT INTO sessions(date, slot_type)
-    VALUES ('2023-09-14', 1);
+INSERT INTO sessions(date, session_type, session_status)
+    VALUES ('2023-09-14', 'evening', 'available');
 
 SELECT
     *

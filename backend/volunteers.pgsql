@@ -26,4 +26,3 @@ SELECT
     *
 FROM
     volunteers;
-
