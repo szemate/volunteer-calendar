@@ -38,7 +38,7 @@ app.get("/sessions", (req, res) => {
   db.query(
     `SELECT TO_CHAR(date, 'DD-MM-YYYY') AS formatted_date,
        TO_CHAR(date, 'Day') AS day,
-       slot_type,
+       session_type, session_status,
        volunteer_id
     FROM sessions
     ORDER BY date;`
