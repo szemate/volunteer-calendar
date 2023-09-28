@@ -24,13 +24,16 @@ const db = new Pool({
   ssl: true,
 });
 
-// GET "/"
-
 // Connecting to database
 db.connect(function (err) {
   if (err) throw err;
   console.log("Connected!");
 });
+
+// GET "/"
+app.get("/", (req, res) => {
+  res.status(200).json("Hello")
+})
 
 // This endpoint is used to get all the sessions using SQL queries
 

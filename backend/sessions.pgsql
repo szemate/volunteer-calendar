@@ -98,3 +98,18 @@ SELECT
 FROM
     sessions;
 
+SELECT TO_CHAR(date, 'DD-MM-YYYY') AS formatted_date,
+       TO_CHAR(date, 'Day') AS day,
+       session_type, session_status,
+       volunteer_id
+    FROM sessions
+    ORDER BY date;
+
+   
+SELECT TO_CHAR(date, 'DD-MM-YYYY') AS formatted_date,
+       TO_CHAR(date, 'Day') AS day,
+       session_type, session_status,
+       volunteer_id
+FROM sessions
+GROUP BY formatted_date, day;
+
