@@ -1,4 +1,4 @@
-import SlotsCalendar from "./components/SlotsCalendar";
+import Calendar from "./components/Calendar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -10,7 +10,7 @@ function App() {
         <Header />
         <Navbar />
       </div>
-      <SlotsCalendar />
+      <Calendar />
       <Footer />
     </div>
   );
