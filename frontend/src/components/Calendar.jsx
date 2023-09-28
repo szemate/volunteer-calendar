@@ -35,8 +35,8 @@ function Calendar() {
       <div className="w-full grid grid-cols-7">
         {generateDate().map(({ date, currentMonth, today }, index) => {
           return (
-            <div key={index} className="h-14 border grid place-content-center ">
-              <h1 className={conditions(currentMonth ? "" : "text-gray-400")}>
+            <div key={index} className="h-14 border grid place-content-center text-sm">
+              <h1 className={conditions(currentMonth ? "" : "text-gray-400", today ? "bg-red-600 text-white" : "", "h-10 w-10 grid place-content-center rounded-full hover:bg-black hover:text-white transition-all cursor-pointer")}>
                 {date.date()}
               </h1>
             </div>
