@@ -1,6 +1,7 @@
 import React from "react";
 import generateDate from "../utils/generateDate";
 import dayjs from "dayjs";
+import conditions from "../utils/conditions";
 
 function Calendar() {
   const firstDateOfMonth = dayjs().year(2023).month(9).startOf("month");
@@ -35,7 +36,7 @@ function Calendar() {
         {generateDate().map(({ date, currentMonth, today }, index) => {
           return (
             <div key={index} className="h-14 border grid place-content-center ">
-              <h1>
+              <h1 className={conditions(currentMonth ? "" : "text-gray-400")}>
                 {date.date()}
               </h1>
             </div>
