@@ -10,8 +10,8 @@ function Calendar() {
   console.log(generateDate());
 
   const days = ["S", "M", "T", "W", "T", "F", "S"];
-  const currentDate = dayjs()
-  const [today, setToday] = useState(currentDate)
+  const currentDate = dayjs();
+  const [today, setToday] = useState(currentDate);
 
   //   const days = [
   //     "Saturday",
@@ -27,7 +27,9 @@ function Calendar() {
     <div className="flex flex-col sm:flex-row sm:w-1/2 sm:mx-auto sm:divide-x-2 sm:gap-10 h-screen items-start ">
       <div className="w-96 h-96 ">
         <div>
-          <h1>{months[today.month()]}</h1>
+          <h1>
+            {months[today.month()]}, {today.year()}
+          </h1>
         </div>
         <div className="w-full grid grid-cols-7 text-gray-700">
           {days.map((day, index) => {
