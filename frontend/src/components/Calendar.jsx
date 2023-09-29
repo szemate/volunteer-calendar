@@ -39,7 +39,12 @@ function Calendar() {
             >
               Today
             </h1>
-            <GrFormNext className="w-5 h-5 cursor-pointer" />
+            <GrFormNext
+              className="w-5 h-5 cursor-pointer"
+              onClick={() => {
+                setToday(today.month(today.month() + 1));
+              }}
+            />
           </div>
         </div>
         <div className="w-full grid grid-cols-7 text-gray-700">
