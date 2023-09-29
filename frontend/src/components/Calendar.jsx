@@ -31,7 +31,14 @@ function Calendar() {
               className="w-5 h-5 cursor-pointer"
               onClick={() => setToday(today.month(today.month() - 1))}
             />
-            <h1 className="cursor-pointer">Today</h1>
+            <h1
+              className="cursor-pointer"
+              onClick={() => {
+                setToday(currentDate);
+              }}
+            >
+              Today
+            </h1>
             <GrFormNext className="w-5 h-5 cursor-pointer" />
           </div>
         </div>
