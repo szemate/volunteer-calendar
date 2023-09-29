@@ -28,7 +28,7 @@ export const generateDate = (
 
   // generate suffix date
 
-  const remaining = 35 - arrayOfDate.length;
+  const remaining = 42 - arrayOfDate.length;
 
   for (
     let i = lastDateOfMonth.date() + 1;
@@ -40,7 +40,6 @@ export const generateDate = (
 
   return arrayOfDate;
 };
-
 
 export const months = [
   "January",
@@ -55,4 +54,4 @@ export const months = [
   "October",
   "November",
   "December",
-]
+];
