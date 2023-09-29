@@ -1,6 +1,6 @@
 import dayjs from "dayjs";
 
-const generateDate = (
+export const generateDate = (
   month = dayjs().month(),
   year = dayjs().year()
 ) => {
@@ -41,4 +41,18 @@ const generateDate = (
   return arrayOfDate;
 };
 
-export default generateDate;
+
+export const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+]
