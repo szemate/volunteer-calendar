@@ -5,11 +5,6 @@ import conditions from "../utils/conditions";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 
 function Calendar() {
-  const firstDateOfMonth = dayjs().year(2023).month(9).startOf("month");
-  console.log("first day of month", firstDateOfMonth);
-
-  console.log(generateDate());
-
   const days = ["S", "M", "T", "W", "T", "F", "S"];
   const currentDate = dayjs();
   const [today, setToday] = useState(currentDate);
@@ -32,7 +27,10 @@ function Calendar() {
             {months[today.month()]}, {today.year()}
           </h1>
           <div className="flex items-center gap-5">
-            <GrFormPrevious className="w-5 h-5 cursor-pointer" />
+            <GrFormPrevious
+              className="w-5 h-5 cursor-pointer"
+              onClick={() => setToday(today.month(today.month() - 1))}
+            />
             <h1 className="cursor-pointer">Today</h1>
             <GrFormNext className="w-5 h-5 cursor-pointer" />
           </div>
@@ -50,24 +48,26 @@ function Calendar() {
           })}
         </div>
         <div className="w-full grid grid-cols-7">
-          {generateDate().map(({ date, currentMonth, today }, index) => {
-            return (
-              <div
-                key={index}
-                className="h-14 border grid place-content-center text-sm"
-              >
-                <h1
-                  className={conditions(
-                    currentMonth ? "" : "text-gray-400",
-                    today ? "bg-red-600 text-white" : "",
-                    "h-10 w-10 grid place-content-center rounded-full hover:bg-black hover:text-white transition-all cursor-pointer"
-                  )}
+          {generateDate(today.month(), today.year()).map(
+            ({ date, currentMonth, today }, index) => {
+              return (
+                <div
+                  key={index}
+                  className="h-14 border grid place-content-center text-sm"
                 >
-                  {date.date()}
-                </h1>
-              </div>
-            );
-          })}
+                  <h1
+                    className={conditions(
+                      currentMonth ? "" : "text-gray-400",
+                      today ? "bg-red-600 text-white" : "",
+                      "h-10 w-10 grid place-content-center rounded-full hover:bg-black hover:text-white transition-all cursor-pointer"
+                    )}
+                  >
+                    {date.date()}
+                  </h1>
+                </div>
+              );
+            }
+          )}
         </div>
       </div>
       <div className="h-96 w-96 px-4 mt-8 sm:px-5">
