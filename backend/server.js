@@ -32,8 +32,8 @@ db.connect(function (err) {
 
 // GET "/"
 app.get("/", (req, res) => {
-  res.status(200).json("Hello")
-})
+  res.status(200).json("Hello");
+});
 
 // This endpoint is used to get all the sessions using SQL queries
 
@@ -41,9 +41,10 @@ app.get("/sessions", (req, res) => {
   db.query(
     `SELECT TO_CHAR(date, 'DD-MM-YYYY') AS formatted_date,
        TO_CHAR(date, 'Day') AS day,
-       session_type, session_status,
-       volunteer_id
+       session_type,
+       volunteers.name AS volunteer_name
     FROM sessions
+    LEFT OUTER JOIN volunteers ON (sessions.volunteer_id = volunteers.id)
     ORDER BY date;`
   )
     .then((result) => res.json(result.rows))
@@ -84,6 +85,15 @@ app.put("/sessions/:id", (req, res) => {
     .catch((err) => {
       console.log(err);
       res.status(500).json({ error: err });
+    });
+});
+
+app.get("/volunteers", (req, res) => {
+  db.query(`SELECT * FROM volunteers;`)
+    .then((result) => res.json(result.rows))
+    .catch((error) => {
+      console.log(error.message);
+      res.status(500).send("Database Error");
     });
 });
 
