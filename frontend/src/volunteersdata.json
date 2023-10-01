@@ -1,32 +1,38 @@
 [
   {
     "id": 1,
-    "names": "Afsha",
+    "name": "Afsha",
     "phone_number": "07111222333",
     "email": "afsha.volunteer@gooddeeds.org"
   },
   {
     "id": 2,
-    "names": "Junita",
+    "name": "Junita",
     "phone_number": "07222111333",
     "email": "junita.volunteer@gooddeeds.org"
   },
   {
     "id": 3,
-    "names": "Saliha",
+    "name": "Saliha",
     "phone_number": "07111333222",
     "email": "saliha.volunteer@gooddeeds.org"
   },
   {
     "id": 4,
-    "names": "Saqib",
+    "name": "Saqib",
     "phone_number": "07111222999",
     "email": "saqib.volunteer@gooddeeds.org"
   },
   {
     "id": 5,
-    "names": "Daniel",
+    "name": "Daniel",
     "phone_number": "07999222333",
     "email": "daniel.volunteer@gooddeeds.org"
+  },
+  {
+    "id": 6,
+    "name": "Lorentz",
+    "phone_number": "07999999333",
+    "email": "lorentz.volunteer@gooddeeds.org"
   }
 ]

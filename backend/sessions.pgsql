@@ -4,112 +4,105 @@ CREATE TABLE sessions(
     id serial PRIMARY KEY,
     volunteer_id integer,
     date date NOT NULL,
-    session_type varchar(25) NOT NULL,
-    session_status varchar(25) NOT NULL,
+    session_type varchar(25) NOT null,
     FOREIGN KEY (volunteer_id) REFERENCES volunteers(id)
 );
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-01', 'morning', 'booked');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-01', 'morning', 5);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-01', 'evening', 'booked');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-01', 'evening', 4);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-02', 'morning', 'booked');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-02', 'morning', 2);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-02', 'evening', 'booked');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-02', 'evening', 3);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-03', 'morning', 'bagged');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-03', 'morning', 1);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-03', 'evening', 'available');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-03', 'evening', null);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-04', 'morning', 'booked');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-04', 'morning', 6);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-04', 'evening', 'booked');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-04', 'evening', 5);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-05', 'morning', 'bagged');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-05', 'morning', 1);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-05', 'evening', 'booked');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-05', 'evening', 2);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-06', 'morning', 'bagged');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-06', 'morning', 1);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-06', 'evening', 'booked');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-06', 'evening', 4);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-07', 'morning', 'booked');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-07', 'morning', 3);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-07', 'evening', 'bagged');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-07', 'evening', 1);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-08', 'morning', 'booked');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-08', 'morning', 2);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-08', 'evening', 'available');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-08', 'evening', null);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-09', 'morning', 'booked');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-09', 'morning', 6);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-09', 'evening', 'available');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-09', 'evening', null);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-10', 'morning', 'booked');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-10', 'morning', 3);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-10', 'evening', 'booked');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-10', 'evening', 5);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-11', 'morning', 'available');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-11', 'morning', null);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-11', 'evening', 'available');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-11', 'evening', null);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-12', 'morning', 'booked');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-12', 'morning', 2);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-12', 'evening', 'available');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-12', 'evening', null);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-13', 'morning', 'booked');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-13', 'morning', 6);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-13', 'evening', 'available');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-13', 'evening', null);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-14', 'morning', 'booked');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-14', 'morning', 4);
 
-INSERT INTO sessions(date, session_type, session_status)
-    VALUES ('2023-09-14', 'evening', 'available');
+INSERT INTO sessions(date, session_type, volunteer_id)
+    VALUES ('2023-09-14', 'evening', null);
 
 SELECT
     *
 FROM
     sessions;
-
-SELECT TO_CHAR(date, 'DD-MM-YYYY') AS formatted_date,
-       TO_CHAR(date, 'Day') AS day,
-       session_type, session_status,
-       volunteer_id
-    FROM sessions
-    ORDER BY date;
-
    
 SELECT TO_CHAR(date, 'DD-MM-YYYY') AS formatted_date,
        TO_CHAR(date, 'Day') AS day,
-       session_type, session_status,
-       volunteer_id
-FROM sessions
-GROUP BY formatted_date, day;
+       session_type,
+       volunteers.name AS name
+    FROM sessions
+    LEFT OUTER JOIN volunteers ON (sessions.volunteer_id = volunteers.id)
+    ORDER BY date;
+
 
