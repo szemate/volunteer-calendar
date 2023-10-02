@@ -41,11 +41,11 @@ app.get("/sessions", (req, res) => {
   db.query(
     `SELECT TO_CHAR(date, 'DD-MM-YYYY') AS formatted_date,
        TO_CHAR(date, 'Day') AS day,
-       session_type,
-       volunteers.name AS volunteer_name
-    FROM sessions
-    LEFT OUTER JOIN volunteers ON (sessions.volunteer_id = volunteers.id)
-    ORDER BY date;`
+       session_type, b.id AS booking_id,
+       v.name AS volunteer_name
+      FROM sessions s LEFT JOIN bookings b ON (s.id = b.session_id)
+      FULL OUTER JOIN volunteers v ON (b.volunteer_id = v.id)
+      ORDER BY date;`
   )
     .then((result) => res.json(result.rows))
     .catch((error) => {
@@ -54,10 +54,21 @@ app.get("/sessions", (req, res) => {
     });
 });
 
-// This endpoint is used to get all the sessions using SQL queries
+// This endpoint is used to get all the volunteers using SQL queries
 
 app.get("/volunteers", (req, res) => {
   db.query(`SELECT * FROM volunteers;`)
+    .then((result) => res.json(result.rows))
+    .catch((error) => {
+      console.log(error.message);
+      res.status(500).send("Database Error");
+    });
+});
+
+// This endpoint is used to get all the bookings using SQL queries
+
+app.get("/bookings", (req, res) => {
+  db.query(`SELECT * FROM bookings;`)
     .then((result) => res.json(result.rows))
     .catch((error) => {
       console.log(error.message);
