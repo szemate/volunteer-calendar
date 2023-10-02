@@ -20,11 +20,29 @@ INSERT INTO volunteers(name, phone_number, email)
     VALUES ('Saqib', '07111222999', 'saqib.volunteer@gooddeeds.org');
 
 INSERT INTO volunteers(name, phone_number, email)
-    VALUES ('Daniel', '07999222333', 'daniel.volunteer@gooddeeds.org');
+    VALUES ('Paulina', '07999222333', 'paulina.volunteer@gooddeeds.org');
+   
+INSERT INTO volunteers(name, phone_number, email)
+    VALUES ('Elena', '07999999333', 'elena.volunteer@gooddeeds.org');
+   
+INSERT INTO volunteers(name, phone_number, email)
+    VALUES ('Shadi', '07999999333', 'shadi.volunteer@gooddeeds.org');
+   
+INSERT INTO volunteers(name, phone_number, email)
+    VALUES ('Anu', '07999999333', 'anu.volunteer@gooddeeds.org');
+
+INSERT INTO volunteers(name, phone_number, email)
+    VALUES ('Bekir', '07999999333', 'bekir.volunteer@gooddeeds.org');
+   
+INSERT INTO volunteers(name, phone_number, email)
+    VALUES ('Onur', '07999999333', 'onur.volunteer@gooddeeds.org');
+   
+INSERT INTO volunteers(name, phone_number, email)
+    VALUES ('Daniel', '07999999333', 'daniel.volunteer@gooddeeds.org');
    
 INSERT INTO volunteers(name, phone_number, email)
     VALUES ('Lorentz', '07999999333', 'lorentz.volunteer@gooddeeds.org');
-
+   
 SELECT
     *
 FROM
