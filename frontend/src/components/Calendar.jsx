@@ -3,6 +3,7 @@ import { generateDate, months } from "../utils/generateDate";
 import dayjs from "dayjs";
 import conditions from "../utils/conditions";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
+import SessionStatusBox from "./SessionStatusBox";
 
 function Calendar() {
   const days = ["S", "M", "T", "W", "T", "F", "S"];
@@ -96,13 +97,8 @@ function Calendar() {
           )}
         </div>
       </div>
-      <div className="h-96 w-96 px-4 pt-3 mt-8 sm:px-5">
-        <h1 className="font-semibold">
-          Sessions Status for {selectedDate.toDate().toDateString()}
-        </h1>
-        <p>Morning Session: Booked by a volunteer</p>
-        <p>Evening Session: Booked by a volunteer</p>
-      </div>
+
+      <SessionStatusBox selectedDate={selectedDate} />
     </div>
   );
 }
