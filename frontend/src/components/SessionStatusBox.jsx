@@ -8,14 +8,14 @@ function SessionStatusBox({ selectedDate }) {
     (session) => session.formatted_date === selectedDate.format("DD-MM-YYYY")
   );
   return (
-    <div className="h-96 w-96 px-4 pt-3 mt-8 sm:px-5">
+    <div className="h-96 w-96 px-8 mt-10 sm:mt-24 lg:mt-12 sm:px-8 lg:pl-12 lg:pr-2">
       <h1 className="font-semibold">
         Sessions Status for {selectedDate.toDate().toDateString()}
       </h1>
       {matchingSessions.length === 0 && <p>No sessions exist for this date</p>}
       {matchingSessions.length > 0 &&
-        matchingSessions.map((session) => (
-          <div>
+        matchingSessions.map((session, index) => (
+          <div key={index}>
             <p>
               {session.volunteer_id != null
                 ? `${capitalizeFirstLetter(session.session_type)}: ${

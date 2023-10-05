@@ -22,8 +22,8 @@ function Calendar() {
   //   ];
 
   return (
-    <div className="flex flex-col sm:flex-row w-1/2 sm:mx-auto  sm:mt-5 sm:divide-x-2 sm:gap-10 h-screen items-start">
-      <div className="w-96 h-96 ">
+    <div className="flex flex-col lg:flex-row sm:mx-auto  sm:mt-5 sm:divide-x-2 sm:gap-1 h-screen items-start">
+      <div className="w-96 h-96 sm:w-3/5">
         {/* displaying the month and year*/}
         <div className="flex justify-between px-6 ">
           <h1 className="font-semibold">
@@ -54,7 +54,7 @@ function Calendar() {
           </div>
         </div>
         {/* getting the days */}
-        <div className="w-full grid grid-cols-7 text-gray-700 px-4">
+        <div className="w-full grid grid-cols-7 text-gray-700 px-4 sm:px-8">
           {days.map((day, index) => {
             return (
               <h1
@@ -67,11 +67,12 @@ function Calendar() {
           })}
         </div>
         {/* generating date in the calendar */}
-        <div className="w-full grid grid-cols-7 px-4">
+        <div className="w-full grid grid-cols-7 px-8 sm:px-8">
           {generateDate(today.month(), today.year()).map(
             ({ date, currentMonth, today }, index) => {
               return (
                 <DateBox
+                  key={index}
                   index={index}
                   date={date}
                   selectedDate={selectedDate}

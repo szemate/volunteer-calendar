@@ -4,23 +4,6 @@ import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import NightlightRoundSharpIcon from "@mui/icons-material/NightlightRoundSharp";
 import sessions from "../sessionsdata.json";
 
-/* plan:
-we are mapping through the dates and creating a date box for each date, we are passing in a date value. So each date  box contains a reference to the date that we generated. 
-Knowing that we can compare the date that is passed to our date box with dates from the sessions data
-
-1- we will format the "date" variable into a string.
-- after that we need to check if it matches with the formatted_date in the sessions data
-- once we've done that we will have each date box will have a variable that will have a formatted_date string
-- we know each box component will be render from top to bottom
-- we are creating a value from the prop date and it is created from each render
-
-2- after that we can create a new variable doesSessionExist and we will assign includes array method to that (if the date value matches the formatted_date from sessions data)
-
-- map through the sessions data
-- our calendar date exists in our sessions: we have the icons displayed; if it doesn't exist then no icons displayed
-- 
-*/
-
 function DateBox({
   index,
   date,
@@ -42,7 +25,7 @@ function DateBox({
         key={index}
         // className="h-14 border grid place-content-center text-sm"
         className={conditions(
-          "h-12 w-10 hover:bg-black hover:text-white transition-all cursor-pointer border p-1 text-sm grid grid-cols-2 border-spacing-1",
+          "h-14 w-12 hover:bg-black hover:text-white transition-all cursor-pointer border text-sm grid grid-cols-2 border-spacing-1 sm:border p-1 lg:p-2 sm:h-16 sm:w-16",
           currentMonth ? "" : "text-gray-400",
           today ? "bg-red-400 text-white" : "",
           selectedDate.toDate().toDateString() === date.toDate().toDateString()
@@ -76,3 +59,4 @@ function DateBox({
 }
 
 export default DateBox;
+
