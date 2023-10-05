@@ -3,10 +3,12 @@ import sessions from "../sessionsdata.json";
 import capitalizeFirstLetter from "../utils/capitalizeFirstLetter.js";
 
 function SessionStatusBox({ selectedDate }) {
+
   const matchingSessions = sessions.filter(
     (session) => session.formatted_date === selectedDate.format("DD-MM-YYYY")
   );
 
+  console.log("matchingDate -->", matchingSessions);
   return (
     <div className="h-96 w-96 px-4 pt-3 mt-8 sm:px-5">
       <h1 className="font-semibold">
