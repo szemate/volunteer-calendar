@@ -42,7 +42,7 @@ function DateBox({
           setSelectedDate(date);
         }}
       >
-        <h1>{date.date()}</h1>
+        <p>{date.date()}</p>
         <div className="grid grid-col sm:p-2">
           <div className={existingMorningSession ? "block" : "hidden"}>
             {existingMorningSession?.volunteer_id ? (

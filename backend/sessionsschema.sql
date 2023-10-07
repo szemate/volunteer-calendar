@@ -7,130 +7,190 @@ CREATE TABLE sessions(
 );
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-01', 'morning');
+    VALUES ('2023-10-01', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-01', 'evening');
+    VALUES ('2023-10-01', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-02', 'morning');
+    VALUES ('2023-10-02', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-02', 'evening');
+    VALUES ('2023-10-02', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-03', 'morning');
+    VALUES ('2023-10-03', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-03', 'evening');
+    VALUES ('2023-10-03', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-04', 'morning');
+    VALUES ('2023-10-04', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-04', 'evening');
+    VALUES ('2023-10-04', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-05', 'morning');
+    VALUES ('2023-10-05', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-05', 'evening');
+    VALUES ('2023-10-05', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-06', 'morning');
+    VALUES ('2023-10-06', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-06', 'evening');
+    VALUES ('2023-10-06', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-07', 'morning');
+    VALUES ('2023-10-07', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-07', 'evening');
+    VALUES ('2023-10-07', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-08', 'morning');
+    VALUES ('2023-10-08', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-08', 'evening');
+    VALUES ('2023-10-08', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-09', 'morning');
+    VALUES ('2023-10-09', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-09', 'evening');
+    VALUES ('2023-10-09', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-10', 'morning');
+    VALUES ('2023-10-10', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-10', 'evening');
+    VALUES ('2023-10-10', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-11', 'morning');
+    VALUES ('2023-10-11', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-11', 'evening');
+    VALUES ('2023-10-11', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-12', 'morning');
+    VALUES ('2023-10-12', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-12', 'evening');
+    VALUES ('2023-10-12', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-13', 'morning');
+    VALUES ('2023-10-13', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-13', 'evening');
+    VALUES ('2023-10-13', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-14', 'morning');
+    VALUES ('2023-10-14', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-14', 'evening');
+    VALUES ('2023-10-14', 'evening');
    
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-15', 'morning');
+    VALUES ('2023-10-15', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-15', 'evening');
+    VALUES ('2023-10-15', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-16', 'morning');
+    VALUES ('2023-10-16', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-16', 'evening');
+    VALUES ('2023-10-16', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-17', 'morning');
+    VALUES ('2023-10-17', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-17', 'evening');
+    VALUES ('2023-10-17', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-18', 'morning');
+    VALUES ('2023-10-18', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-18', 'evening');
+    VALUES ('2023-10-18', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-19', 'morning');
+    VALUES ('2023-10-19', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-19', 'evening');
+    VALUES ('2023-10-19', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-20', 'morning');
+    VALUES ('2023-10-20', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-20', 'evening');
+    VALUES ('2023-10-20', 'evening');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-21', 'morning');
+    VALUES ('2023-10-21', 'morning');
 
 INSERT INTO sessions(date, session_type)
-    VALUES ('2023-09-21', 'evening');
+    VALUES ('2023-10-21', 'evening');
+   
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-22', 'morning');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-22', 'evening');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-23', 'morning');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-23', 'evening');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-24', 'morning');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-24', 'evening');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-25', 'morning');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-25', 'evening');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-26', 'morning');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-26', 'evening');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-27', 'morning');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-27', 'evening');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-28', 'morning');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-28', 'evening');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-29', 'morning');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-29', 'evening');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-30', 'morning');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-30', 'evening');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-31', 'morning');
+
+INSERT INTO sessions(date, session_type)
+    VALUES ('2023-10-31', 'evening');
 
 SELECT
     *

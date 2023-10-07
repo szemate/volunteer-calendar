@@ -9,9 +9,9 @@ function SessionStatusBox({ selectedDate }) {
   );
   return (
     <div className="h-96 w-96 px-8 mt-10 sm:mt-24 lg:mt-12 sm:px-8 lg:pl-12 lg:pr-2">
-      <h1 className="font-semibold">
+      <p className="font-semibold">
         Sessions Status for {selectedDate.toDate().toDateString()}
-      </h1>
+      </p>
       {matchingSessions.length === 0 && <p>No sessions exist for this date</p>}
       {matchingSessions.length > 0 &&
         matchingSessions.map((session, index) => (

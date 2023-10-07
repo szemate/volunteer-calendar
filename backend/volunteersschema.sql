@@ -5,23 +5,24 @@ CREATE TABLE volunteers(
     first_name varchar(60) NOT NULL,
     last_name varchar(60) NOT NULL,
     phone_number varchar(20) NOT NULL,
-    email varchar(60) NOT NULL
+    email varchar(50) NOT NULL,
+    photo varchar(60)
 );
 
-INSERT INTO volunteers(first_name, last_name, phone_number, email)
-    VALUES ('Afsha', 'Purple','07111222333', 'afsha.volunteer@gooddeeds.org');
+INSERT INTO volunteers(first_name, last_name, phone_number, email, photo)
+    VALUES ('Daniel', 'Turquoise','07111222333', 'afsha.volunteer@gooddeeds.org', 'https://tecdn.b-cdn.net/img/Photos/Avatars/avatar-1.webp');
 
-INSERT INTO volunteers(first_name, last_name, phone_number, email)
-    VALUES ('Junita', 'White', '07222111333', 'junita.volunteer@gooddeeds.org');
+INSERT INTO volunteers(first_name, last_name, phone_number, email, photo)
+    VALUES ('Junita', 'White', '07222111333', 'junita.volunteer@gooddeeds.org','https://tecdn.b-cdn.net/img/Photos/Avatars/avatar-2.webp');
 
-INSERT INTO volunteers(first_name, last_name, phone_number, email)
-    VALUES ('Saliha', 'Green', '07111333222', 'saliha.volunteer@gooddeeds.org');
+INSERT INTO volunteers(first_name, last_name, phone_number, email, photo)
+    VALUES ('Saliha', 'Green', '07111333222', 'saliha.volunteer@gooddeeds.org', 'https://tecdn.b-cdn.net/img/Photos/Avatars/avatar-3.webp');
 
-INSERT INTO volunteers(first_name, last_name, phone_number, email)
-    VALUES ('Saqib', 'Red', '07111222999', 'saqib.volunteer@gooddeeds.org');
+INSERT INTO volunteers(first_name, last_name, phone_number, email, photo)
+    VALUES ('Afsha', 'Purple', '07111222999', 'saqib.volunteer@gooddeeds.org', 'https://tecdn.b-cdn.net/img/Photos/Avatars/avatar-4.webp');
 
-INSERT INTO volunteers(first_name, last_name, phone_number, email)
-    VALUES ('Paulina', 'Blue', '07999222333', 'paulina.volunteer@gooddeeds.org');
+INSERT INTO volunteers(first_name, last_name, phone_number, email, photo)
+    VALUES ('Paulina', 'Blue', '07999222333', 'paulina.volunteer@gooddeeds.org', 'https://tecdn.b-cdn.net/img/Photos/Avatars/avatar-5.webp');
    
 INSERT INTO volunteers(first_name, last_name, phone_number, email)
     VALUES ('Elena', 'Gold', '07999999333', 'elena.volunteer@gooddeeds.org');
@@ -39,7 +40,7 @@ INSERT INTO volunteers(first_name, last_name, phone_number, email)
     VALUES ('Onur', 'Black', '07999333999', 'onur.volunteer@gooddeeds.org');
    
 INSERT INTO volunteers(first_name, last_name, phone_number, email)
-    VALUES ('Daniel', 'Turquoise',  '07999000999', 'daniel.volunteer@gooddeeds.org');
+    VALUES ('Saqib', 'Red',  '07999000999', 'daniel.volunteer@gooddeeds.org');
    
 INSERT INTO volunteers(first_name, last_name, phone_number, email)
     VALUES ('Lorentz', 'Yellow', '07999999000', 'lorentz.volunteer@gooddeeds.org');

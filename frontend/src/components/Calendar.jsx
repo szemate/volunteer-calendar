@@ -26,9 +26,9 @@ function Calendar() {
       <div className="w-96 h-96 sm:w-3/5">
         {/* displaying the month and year*/}
         <div className="flex justify-between px-6 ">
-          <h1 className="font-semibold">
+          <p className="font-semibold">
             {months[today.month()]}, {today.year()}
-          </h1>
+          </p>
           <div className="flex items-center gap-5">
             {/* Button showing previous month */}
             <GrFormPrevious
@@ -36,14 +36,14 @@ function Calendar() {
               onClick={() => setToday(today.month(today.month() - 1))}
             />
             {/* button taking us to be today */}
-            <h1
+            <p
               className="cursor-pointer"
               onClick={() => {
                 setToday(currentDate);
               }}
             >
               Today
-            </h1>
+            </p>
             {/* Button showing previous month */}
             <GrFormNext
               className="w-5 h-5 cursor-pointer"
@@ -57,12 +57,12 @@ function Calendar() {
         <div className="w-full grid grid-cols-7 text-gray-700 px-4 sm:px-8">
           {days.map((day, index) => {
             return (
-              <h1
+              <p
                 key={index}
                 className="h-14 grid place-content-center text-sm"
               >
                 {day}
-              </h1>
+              </p>
             );
           })}
         </div>
