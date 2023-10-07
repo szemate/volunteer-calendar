@@ -2,6 +2,7 @@
   {
     "formatted_date": "01-10-2023",
     "day": "Sunday   ",
+    "session_id": 1,
     "session_type": "morning",
     "booking_id": 1,
     "volunteer_id": 9,
@@ -11,6 +12,7 @@
   {
     "formatted_date": "01-10-2023",
     "day": "Sunday   ",
+    "session_id": 2,
     "session_type": "evening",
     "booking_id": 2,
     "volunteer_id": 7,
@@ -20,6 +22,7 @@
   {
     "formatted_date": "02-10-2023",
     "day": "Monday   ",
+    "session_id": 3,
     "session_type": "morning",
     "booking_id": 3,
     "volunteer_id": 2,
@@ -29,6 +32,7 @@
   {
     "formatted_date": "02-10-2023",
     "day": "Monday   ",
+    "session_id": 4,
     "session_type": "evening",
     "booking_id": 4,
     "volunteer_id": 3,
@@ -38,6 +42,7 @@
   {
     "formatted_date": "03-10-2023",
     "day": "Tuesday  ",
+    "session_id": 5,
     "session_type": "morning",
     "booking_id": 5,
     "volunteer_id": 1,
@@ -47,6 +52,7 @@
   {
     "formatted_date": "03-10-2023",
     "day": "Tuesday  ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -56,6 +62,7 @@
   {
     "formatted_date": "04-10-2023",
     "day": "Wednesday",
+    "session_id": 7,
     "session_type": "morning",
     "booking_id": 6,
     "volunteer_id": 6,
@@ -65,6 +72,7 @@
   {
     "formatted_date": "04-10-2023",
     "day": "Wednesday",
+    "session_id": 8,
     "session_type": "evening",
     "booking_id": 7,
     "volunteer_id": 11,
@@ -74,6 +82,7 @@
   {
     "formatted_date": "05-10-2023",
     "day": "Thursday ",
+    "session_id": 9,
     "session_type": "morning",
     "booking_id": 8,
     "volunteer_id": 1,
@@ -83,6 +92,7 @@
   {
     "formatted_date": "05-10-2023",
     "day": "Thursday ",
+    "session_id": 10,
     "session_type": "evening",
     "booking_id": 9,
     "volunteer_id": 12,
@@ -92,6 +102,7 @@
   {
     "formatted_date": "06-10-2023",
     "day": "Friday   ",
+    "session_id": 11,
     "session_type": "morning",
     "booking_id": 10,
     "volunteer_id": 1,
@@ -101,6 +112,7 @@
   {
     "formatted_date": "06-10-2023",
     "day": "Friday   ",
+    "session_id": 12,
     "session_type": "evening",
     "booking_id": 11,
     "volunteer_id": 8,
@@ -110,6 +122,7 @@
   {
     "formatted_date": "07-10-2023",
     "day": "Saturday ",
+    "session_id": 13,
     "session_type": "morning",
     "booking_id": 12,
     "volunteer_id": 3,
@@ -119,6 +132,7 @@
   {
     "formatted_date": "07-10-2023",
     "day": "Saturday ",
+    "session_id": 14,
     "session_type": "evening",
     "booking_id": 13,
     "volunteer_id": 1,
@@ -128,6 +142,7 @@
   {
     "formatted_date": "08-10-2023",
     "day": "Sunday   ",
+    "session_id": 15,
     "session_type": "morning",
     "booking_id": 14,
     "volunteer_id": 4,
@@ -137,6 +152,7 @@
   {
     "formatted_date": "08-10-2023",
     "day": "Sunday   ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -146,6 +162,7 @@
   {
     "formatted_date": "09-10-2023",
     "day": "Monday   ",
+    "session_id": 17,
     "session_type": "morning",
     "booking_id": 15,
     "volunteer_id": 5,
@@ -155,6 +172,7 @@
   {
     "formatted_date": "09-10-2023",
     "day": "Monday   ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -164,6 +182,7 @@
   {
     "formatted_date": "10-10-2023",
     "day": "Tuesday  ",
+    "session_id": 19,
     "session_type": "morning",
     "booking_id": 16,
     "volunteer_id": 3,
@@ -173,6 +192,7 @@
   {
     "formatted_date": "10-10-2023",
     "day": "Tuesday  ",
+    "session_id": 20,
     "session_type": "evening",
     "booking_id": 17,
     "volunteer_id": 9,
@@ -182,6 +202,7 @@
   {
     "formatted_date": "11-10-2023",
     "day": "Wednesday",
+    "session_id": null,
     "session_type": "morning",
     "booking_id": null,
     "volunteer_id": null,
@@ -191,6 +212,7 @@
   {
     "formatted_date": "11-10-2023",
     "day": "Wednesday",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -200,6 +222,7 @@
   {
     "formatted_date": "12-10-2023",
     "day": "Thursday ",
+    "session_id": 23,
     "session_type": "morning",
     "booking_id": 18,
     "volunteer_id": 10,
@@ -209,6 +232,7 @@
   {
     "formatted_date": "12-10-2023",
     "day": "Thursday ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -218,6 +242,7 @@
   {
     "formatted_date": "13-10-2023",
     "day": "Friday   ",
+    "session_id": 25,
     "session_type": "morning",
     "booking_id": 19,
     "volunteer_id": 6,
@@ -227,6 +252,7 @@
   {
     "formatted_date": "13-10-2023",
     "day": "Friday   ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -236,6 +262,7 @@
   {
     "formatted_date": "14-10-2023",
     "day": "Saturday ",
+    "session_id": 27,
     "session_type": "morning",
     "booking_id": 20,
     "volunteer_id": 2,
@@ -245,6 +272,7 @@
   {
     "formatted_date": "14-10-2023",
     "day": "Saturday ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -254,6 +282,7 @@
   {
     "formatted_date": "15-10-2023",
     "day": "Sunday   ",
+    "session_id": 29,
     "session_type": "morning",
     "booking_id": 21,
     "volunteer_id": 11,
@@ -263,6 +292,7 @@
   {
     "formatted_date": "15-10-2023",
     "day": "Sunday   ",
+    "session_id": 30,
     "session_type": "evening",
     "booking_id": 22,
     "volunteer_id": 12,
@@ -272,6 +302,7 @@
   {
     "formatted_date": "16-10-2023",
     "day": "Monday   ",
+    "session_id": 31,
     "session_type": "morning",
     "booking_id": 23,
     "volunteer_id": 3,
@@ -281,6 +312,7 @@
   {
     "formatted_date": "16-10-2023",
     "day": "Monday   ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -290,6 +322,7 @@
   {
     "formatted_date": "17-10-2023",
     "day": "Tuesday  ",
+    "session_id": null,
     "session_type": "morning",
     "booking_id": null,
     "volunteer_id": null,
@@ -299,6 +332,7 @@
   {
     "formatted_date": "17-10-2023",
     "day": "Tuesday  ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -308,6 +342,7 @@
   {
     "formatted_date": "18-10-2023",
     "day": "Wednesday",
+    "session_id": null,
     "session_type": "morning",
     "booking_id": null,
     "volunteer_id": null,
@@ -317,6 +352,7 @@
   {
     "formatted_date": "18-10-2023",
     "day": "Wednesday",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -326,6 +362,7 @@
   {
     "formatted_date": "19-10-2023",
     "day": "Thursday ",
+    "session_id": 37,
     "session_type": "morning",
     "booking_id": 24,
     "volunteer_id": 7,
@@ -335,6 +372,7 @@
   {
     "formatted_date": "19-10-2023",
     "day": "Thursday ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -344,6 +382,7 @@
   {
     "formatted_date": "20-10-2023",
     "day": "Friday   ",
+    "session_id": null,
     "session_type": "morning",
     "booking_id": null,
     "volunteer_id": null,
@@ -353,6 +392,7 @@
   {
     "formatted_date": "20-10-2023",
     "day": "Friday   ",
+    "session_id": 40,
     "session_type": "evening",
     "booking_id": 25,
     "volunteer_id": 6,
@@ -362,6 +402,7 @@
   {
     "formatted_date": "21-10-2023",
     "day": "Saturday ",
+    "session_id": null,
     "session_type": "morning",
     "booking_id": null,
     "volunteer_id": null,
@@ -371,6 +412,7 @@
   {
     "formatted_date": "21-10-2023",
     "day": "Saturday ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -380,6 +422,7 @@
   {
     "formatted_date": "22-10-2023",
     "day": "Sunday   ",
+    "session_id": null,
     "session_type": "morning",
     "booking_id": null,
     "volunteer_id": null,
@@ -389,6 +432,7 @@
   {
     "formatted_date": "22-10-2023",
     "day": "Sunday   ",
+    "session_id": 44,
     "session_type": "evening",
     "booking_id": 26,
     "volunteer_id": 8,
@@ -398,6 +442,7 @@
   {
     "formatted_date": "23-10-2023",
     "day": "Monday   ",
+    "session_id": 45,
     "session_type": "morning",
     "booking_id": 27,
     "volunteer_id": 5,
@@ -407,6 +452,7 @@
   {
     "formatted_date": "23-10-2023",
     "day": "Monday   ",
+    "session_id": 46,
     "session_type": "evening",
     "booking_id": 28,
     "volunteer_id": 2,
@@ -416,6 +462,7 @@
   {
     "formatted_date": "24-10-2023",
     "day": "Tuesday  ",
+    "session_id": 47,
     "session_type": "morning",
     "booking_id": 29,
     "volunteer_id": 3,
@@ -425,6 +472,7 @@
   {
     "formatted_date": "24-10-2023",
     "day": "Tuesday  ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -434,6 +482,7 @@
   {
     "formatted_date": "25-10-2023",
     "day": "Wednesday",
+    "session_id": 49,
     "session_type": "morning",
     "booking_id": 30,
     "volunteer_id": 11,
@@ -443,6 +492,7 @@
   {
     "formatted_date": "25-10-2023",
     "day": "Wednesday",
+    "session_id": 50,
     "session_type": "evening",
     "booking_id": 31,
     "volunteer_id": 6,
@@ -452,6 +502,7 @@
   {
     "formatted_date": "26-10-2023",
     "day": "Thursday ",
+    "session_id": 51,
     "session_type": "morning",
     "booking_id": 32,
     "volunteer_id": 5,
@@ -461,6 +512,7 @@
   {
     "formatted_date": "26-10-2023",
     "day": "Thursday ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -470,6 +522,7 @@
   {
     "formatted_date": "27-10-2023",
     "day": "Friday   ",
+    "session_id": 53,
     "session_type": "morning",
     "booking_id": 33,
     "volunteer_id": 4,
@@ -479,6 +532,7 @@
   {
     "formatted_date": "27-10-2023",
     "day": "Friday   ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -488,6 +542,7 @@
   {
     "formatted_date": "28-10-2023",
     "day": "Saturday ",
+    "session_id": null,
     "session_type": "morning",
     "booking_id": null,
     "volunteer_id": null,
@@ -497,6 +552,7 @@
   {
     "formatted_date": "28-10-2023",
     "day": "Saturday ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -506,6 +562,7 @@
   {
     "formatted_date": "29-10-2023",
     "day": "Sunday   ",
+    "session_id": 57,
     "session_type": "morning",
     "booking_id": 34,
     "volunteer_id": 7,
@@ -515,6 +572,7 @@
   {
     "formatted_date": "29-10-2023",
     "day": "Sunday   ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -524,6 +582,7 @@
   {
     "formatted_date": "30-10-2023",
     "day": "Monday   ",
+    "session_id": null,
     "session_type": "morning",
     "booking_id": null,
     "volunteer_id": null,
@@ -533,6 +592,7 @@
   {
     "formatted_date": "30-10-2023",
     "day": "Monday   ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,
@@ -542,6 +602,7 @@
   {
     "formatted_date": "31-10-2023",
     "day": "Tuesday  ",
+    "session_id": null,
     "session_type": "morning",
     "booking_id": null,
     "volunteer_id": null,
@@ -551,6 +612,7 @@
   {
     "formatted_date": "31-10-2023",
     "day": "Tuesday  ",
+    "session_id": null,
     "session_type": "evening",
     "booking_id": null,
     "volunteer_id": null,

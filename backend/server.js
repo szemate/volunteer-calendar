@@ -21,6 +21,7 @@ const db = new Pool({
   database: process.env.POSTGRES_DATABASE,
   password: process.env.POSTGRES_PASSWORD,
   port: process.env.POSTGRES_PORT,
+  // ssl: process.env.POSTGRES_SSL === "true" ? { rejectUnauthorized: false } : false
   ssl: true,
 });
 
