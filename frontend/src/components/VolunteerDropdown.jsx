@@ -14,14 +14,15 @@ function VolunteerDropdown() {
   };
 
   return (
-    <>
+    <div className="font-bold text-lg p-1 bg-lime-200">
       <select
-        data-te-select-init value={selectedVolunteerId}
+        data-te-select-init
+        value={selectedVolunteerId}
         onChange={onVolunteerChange}
       >
-        <option value={0}>Select volunteer name</option>
+        {/* if I want the first option to be a string I put the initial useState(0) and use the string in jsx as below: */}
+        <option value={0}>Select a name before you book</option>
         {volunteers.map((volunteer) => {
-          console.log("volunteer -->", volunteer);
           return (
             <option
               key={volunteer.id}
@@ -33,7 +34,7 @@ function VolunteerDropdown() {
           );
         })}
       </select>
-    </>
+    </div>
   );
 }
 

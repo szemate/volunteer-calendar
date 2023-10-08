@@ -3,14 +3,13 @@ import sessions from "../sessionsdata.json";
 import capitalizeFirstLetter from "../utils/capitalizeFirstLetter.js";
 
 function SessionStatusBox({ selectedDate }) {
-
   const matchingSessions = sessions.filter(
     (session) => session.formatted_date === selectedDate.format("DD-MM-YYYY")
   );
   return (
-    <div className="h-96 w-96 px-8 mt-10 sm:mt-24 lg:mt-12 sm:px-8 lg:pl-12 lg:pr-2">
-      <p className="font-semibold">
-        Sessions Status for {selectedDate.toDate().toDateString()}
+    <div className="p-3 mt-4 sm:mt-8 lg:mt-9 sm:p-4 bg-orange-200">
+      <p className="font-semibold py-2">
+        Sessions Status for {selectedDate.toDate().toDateString()}:
       </p>
       {matchingSessions.length === 0 && <p>No sessions exist for this date</p>}
       {matchingSessions.length > 0 &&
@@ -18,12 +17,12 @@ function SessionStatusBox({ selectedDate }) {
           <div key={index}>
             <p>
               {session.volunteer_id != null
-                ? `${capitalizeFirstLetter(session.session_type)}: ${
+                ? `${capitalizeFirstLetter(session.session_type)}- ${
                     session.volunteer_first_name
                   } ${session.volunteer_last_name} has booked this session`
                 : `${capitalizeFirstLetter(
                     session.session_type
-                  )}: This session is available to book`}
+                  )}- This session is available to book`}
             </p>
           </div>
         ))}

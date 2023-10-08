@@ -4,6 +4,7 @@ import dayjs from "dayjs";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import SessionStatusBox from "./SessionStatusBox";
 import DateBox from "./DateBox";
+import VolunteerDropdown from "./VolunteerDropdown";
 
 function Calendar() {
   const days = ["S", "M", "T", "W", "T", "F", "S"];
@@ -57,10 +58,7 @@ function Calendar() {
         <div className="w-full grid grid-cols-7 text-gray-700 px-4 sm:px-8">
           {days.map((day, index) => {
             return (
-              <p
-                key={index}
-                className="h-14 grid place-content-center text-sm"
-              >
+              <p key={index} className="h-14 grid place-content-center text-sm">
                 {day}
               </p>
             );
@@ -85,8 +83,10 @@ function Calendar() {
           )}
         </div>
       </div>
-
-      <SessionStatusBox selectedDate={selectedDate} />
+      <div className="mt-12 mx-6 lg:pt-8">
+        <VolunteerDropdown />
+        <SessionStatusBox selectedDate={selectedDate} />
+      </div>
     </div>
   );
 }

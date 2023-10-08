@@ -2,7 +2,6 @@ import Calendar from "./components/Calendar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import VolunteerDropdown from "./components/VolunteerDropdown";
 
 function App() {
   return (
@@ -11,8 +10,9 @@ function App() {
         <Header />
         <Navbar />
       </div>
-      <Calendar />
-      <VolunteerDropdown  />
+      <div className="">
+        <Calendar />
+      </div>
       <Footer />
     </div>
   );
