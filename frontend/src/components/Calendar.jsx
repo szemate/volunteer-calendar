@@ -24,7 +24,7 @@ function Calendar() {
 
   return (
     <div className="flex flex-col lg:flex-row sm:mx-auto  sm:mt-5 sm:divide-x-2 sm:gap-1 h-screen items-start">
-      <div className="w-96 h-96 sm:w-3/5">
+      <div className="w-96 h-96 sm:w-full lg:w-4/5">
         {/* displaying the month and year*/}
         <div className="flex justify-between px-6 ">
           <p className="font-semibold">
@@ -83,7 +83,7 @@ function Calendar() {
           )}
         </div>
       </div>
-      <div className="mt-12 mx-6 lg:pt-8">
+      <div className="mt-12 mx-8 lg:mx-0 lg:pt-8">
         <VolunteerDropdown />
         <SessionStatusBox selectedDate={selectedDate} />
       </div>

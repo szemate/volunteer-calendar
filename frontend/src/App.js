@@ -5,12 +5,12 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div>
-      <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center">
+      <div>
         <Header />
         <Navbar />
       </div>
-      <div className="">
+      <div>
         <Calendar />
       </div>
       <Footer />
