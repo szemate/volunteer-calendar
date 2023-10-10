@@ -9,7 +9,7 @@ function SessionStatusBox({ selectedDate }) {
   );
   console.log("selected date in Status box", selectedDate);
   return (
-    <div className="p-3 mt-4 sm:mt-8 lg:mt-9 lg:p-4 sm:p-4 bg-orange-200">
+    <div className="p-3 mt-4 sm:mt-8 lg:mt-9 lg:p-4 sm:p-4 bg-amber-200">
       <p className="font-semibold py-2">
         Sessions Status for {selectedDate.toDate().toDateString()}:
       </p>

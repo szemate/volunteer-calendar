@@ -22,7 +22,7 @@ function Calendar() {
   //   ];
 
   return (
-    <div className="flex flex-col lg:flex-row sm:mx-auto  sm:mt-5 sm:divide-x-2 sm:gap-1 h-screen items-start">
+    <div className="flex flex-col lg:flex-row sm:mx-auto  sm:mt-5 sm:gap-1 h-screen items-start">
       <div className="w-96 h-96 sm:w-full lg:w-4/5">
         {/* displaying the month and year*/}
         <div className="flex justify-between px-6 ">
@@ -54,7 +54,7 @@ function Calendar() {
           </div>
         </div>
         {/* getting the days */}
-        <div className="w-full grid grid-cols-7 text-gray-700 px-4 sm:px-8">
+        <div className="w-full grid grid-cols-7 text-gray-800 px-8 sm:px-8">
           {days.map((day, index) => {
             return (
               <p key={index} className="h-14 grid place-content-center text-sm">
@@ -82,8 +82,7 @@ function Calendar() {
           )}
         </div>
       </div>
-      <div className="mt-12 mx-8 lg:mx-0 lg:pt-8">
-        
+      <div className="mt-12 lg:mt-3 mx-8 lg:mx-0 lg:pt-8">
         <SessionStatusBox selectedDate={selectedDate} />
       </div>
     </div>
