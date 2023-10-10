@@ -4,7 +4,6 @@ import dayjs from "dayjs";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import SessionStatusBox from "./SessionStatusBox";
 import DateBox from "./DateBox";
-import VolunteerDropdown from "./VolunteerDropdown";
 
 function Calendar() {
   const days = ["S", "M", "T", "W", "T", "F", "S"];
@@ -84,7 +83,7 @@ function Calendar() {
         </div>
       </div>
       <div className="mt-12 mx-8 lg:mx-0 lg:pt-8">
-        <VolunteerDropdown />
+        
         <SessionStatusBox selectedDate={selectedDate} />
       </div>
     </div>

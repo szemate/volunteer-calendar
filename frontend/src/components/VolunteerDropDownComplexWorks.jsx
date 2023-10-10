@@ -2,7 +2,7 @@ import { React, useState, useEffect } from "react";
 import volunteers from "../volunteersdata.json";
 import { Select, initTE } from "tw-elements";
 
-function VolunteerDropdown() {
+function VolunteerDropdownComplexWorks() {
   const [selectedVolunteerId, setSelectedVolunteerId] = useState(0);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ function VolunteerDropdown() {
   };
 
   return (
-    <div className="font-bold text-lg bg-lime-200">
+    <div className="font-bold text-lg bg-lime-200 z-[99999]">
       <select
         data-te-select-init
         value={selectedVolunteerId}
@@ -38,4 +38,4 @@ function VolunteerDropdown() {
   );
 }
 
-export default VolunteerDropdown;
+export default VolunteerDropdownComplexWorks;
