@@ -57,7 +57,7 @@ function DateBox({
                 sx={{
                   color: "yellow",
                 }}
-                fontSize="string"
+                fontSize="small"
               />
             )}
           </div>

@@ -11,7 +11,7 @@ export default function ConfirmationDialogueBoxBest({ sessionId }) {
     <>
       <button
         type="button"
-        className="focus:outline-none text-white bg-light-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 m-1 sm:m-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+        className="focus:outline-none text-white bg-gradient-to-tl from-light-blue-700 to-light-blue-900 hover:bg-cyan-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 m-1 sm:m-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
         onClick={() => setOpen(true)}
       >
         Book
@@ -62,10 +62,10 @@ export default function ConfirmationDialogueBoxBest({ sessionId }) {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                  <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6 items-center">
                     <button
                       type="button"
-                      className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-red-800 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
+                      className="mt-3 inline-flex justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-red-800 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
                       onClick={() => setOpen(false)}
                       ref={cancelButtonRef}
                     >
@@ -73,7 +73,7 @@ export default function ConfirmationDialogueBoxBest({ sessionId }) {
                     </button>
                     <button
                       type="button"
-                      className="ml-3 inline-flex w-full justify-center rounded-md bg-light-green-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-800 sm:ml-3 sm:w-auto"
+                      className="ml-3 inline-flex justify-center rounded-md bg-light-blue-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-800 sm:ml-3 sm:w-auto"
                       onClick={() => setOpen(false)}
                     >
                       Confirm

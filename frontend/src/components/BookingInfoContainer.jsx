@@ -4,7 +4,10 @@ import YourBookingsDisplayBox from "./YourBookingsDisplayBox";
 
 function BookingInfoContainer({ selectedDate }) {
   return (
-    <div className=" border m-2 border-deep-orange-200 mt-12 p-2 lg:mt-20 mx-8 lg:mx-0 sm:p-2 lg:p-4">
+    <div className=" border m-2 border-deep-orange-200 lg:mt-20 p-2 mx-8 lg:mx-0 sm:p-2 lg:p-4 flex flex-col gap-2">
+      <div className="bg-gradient-to-tl from-deep-orange-100 to-deep-orange-200">
+        <p className="text-xl text-center">Booking Information</p>
+      </div>
       <SessionStatusBox selectedDate={selectedDate} />
       <YourBookingsDisplayBox />
     </div>
