@@ -22,8 +22,8 @@ function Calendar() {
   //   ];
 
   return (
-    <div className="flex flex-col lg:flex-row sm:mx-auto  sm:mt-5 sm:gap-1 h-screen items-start">
-      <div className="w-96 h-96 sm:w-full lg:w-4/5">
+    <div className="flex flex-col lg:flex-row sm:mx-auto  sm:mt-5 sm:gap-1 grow items-start">
+      <div className="w-96 sm:w-full lg:w-4/5">
         {/* displaying the month and year*/}
         <div className="flex justify-between px-6 ">
           <p className="font-semibold">
