@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { generateDate, months } from "../utils/generateDate";
 import dayjs from "dayjs";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
-import SessionStatusBox from "./SessionStatusBox";
 import DateBox from "./DateBox";
+import BookingInfoContainer from "./BookingInfoContainer";
 
 function Calendar() {
   const days = ["S", "M", "T", "W", "T", "F", "S"];
@@ -82,9 +82,7 @@ function Calendar() {
           )}
         </div>
       </div>
-      <div className="mt-12 lg:mt-3 mx-8 lg:mx-0 lg:pt-8">
-        <SessionStatusBox selectedDate={selectedDate} />
-      </div>
+      <BookingInfoContainer selectedDate={selectedDate} />
     </div>
   );
 }

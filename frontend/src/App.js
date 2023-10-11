@@ -1,18 +1,12 @@
 import Calendar from "./components/Calendar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="flex flex-col items-center bg-blue-gray-100">
-      <div>
-        <Header />
-        <Navbar />
-      </div>
-      <div>
-        <Calendar />
-      </div>
+    <div className="flex flex-col items-center bg-blue-gray-100 min-h-screen">
+      <Header />
+      <Calendar />
       <Footer />
     </div>
   );

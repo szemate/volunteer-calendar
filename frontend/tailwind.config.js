@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const withMT = require("@material-tailwind/react/utils/withMT");
 
-export default withMT( {
+export default withMT({
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -11,11 +11,13 @@ export default withMT( {
     "path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      minHeight: {
+        screen: "100vh",
+      },
+    },
   },
   darkMode: "class",
   plugins: [require("tw-elements/dist/plugin.cjs")],
   plugins: [],
 });
-
-

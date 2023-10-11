@@ -9,8 +9,8 @@ function SessionStatusBox({ selectedDate }) {
   );
   console.log("selected date in Status box", selectedDate);
   return (
-    <div className="p-3 mt-4 sm:mt-8 lg:mt-9 lg:p-4 sm:p-4 bg-amber-200">
-      <p className="font-semibold py-2">
+    <div className="p-3 lg:p-4 sm:p-4 bg-deep-orange-100">
+      <p className="font-semibold py-2 pb-3">
         Sessions Status for {selectedDate.toDate().toDateString()}:
       </p>
       {matchingSessions.length === 0 && <p>No sessions exist for this date</p>}
