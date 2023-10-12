@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import volunteers from "../volunteersdata.json";
 
@@ -6,9 +6,10 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function VolunteerDropDownBest() {
-  const [selectedVolunteer, setSelectedVolunteer] = useState();
-
+export default function VolunteerDropDownBest({
+  selectedVolunteer,
+  setSelectedVolunteer,
+}) {
   return (
     <Listbox value={selectedVolunteer} onChange={setSelectedVolunteer}>
       {({ open }) => (

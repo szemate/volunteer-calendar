@@ -2,10 +2,33 @@ import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import VolunteerDropDownBest from "./VolunteerDropDownBest";
 
-export default function ConfirmationDialogueBoxBest({ sessionId }) {
+export default function ConfirmationDialogueBoxBest({
+  sessionId,
+  sessions,
+  setSessions,
+  selectedVolunteer,
+  setSelectedVolunteer,
+}) {
   const [open, setOpen] = useState(false);
 
   const cancelButtonRef = useRef(null);
+
+  function buttonClick() {
+    const updatedSessions = sessions.map((session) => {
+      if (session.session_id === sessionId) {
+        session.volunteer_id = selectedVolunteer.id;
+        session.volunteer_first_name = selectedVolunteer.first_name;
+        session.volunteer_last_name = selectedVolunteer.last_name;
+        console.log("found session -->", session);
+      }
+      return session;
+    });
+    console.log("session id -->", sessionId);
+    console.log("vol id -->", selectedVolunteer.id);
+    console.log("updated sessions -->", updatedSessions);
+    setSessions(updatedSessions);
+    setOpen(false);
+  }
 
   return (
     <>
@@ -57,7 +80,10 @@ export default function ConfirmationDialogueBoxBest({ sessionId }) {
                           Confirm your booking
                         </Dialog.Title>
                         <div className="mt-2">
-                          <VolunteerDropDownBest />
+                          <VolunteerDropDownBest
+                            selectedVolunteer={selectedVolunteer}
+                            setSelectedVolunteer={setSelectedVolunteer}
+                          />
                         </div>
                       </div>
                     </div>
@@ -74,7 +100,7 @@ export default function ConfirmationDialogueBoxBest({ sessionId }) {
                     <button
                       type="button"
                       className="ml-3 inline-flex justify-center rounded-md bg-light-blue-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-800 sm:ml-3 sm:w-auto"
-                      onClick={() => setOpen(false)}
+                      onClick={buttonClick}
                     >
                       Confirm
                     </button>

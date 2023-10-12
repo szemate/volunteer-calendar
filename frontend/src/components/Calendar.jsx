@@ -4,12 +4,14 @@ import dayjs from "dayjs";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import DateBox from "./DateBox";
 import BookingInfoContainer from "./BookingInfoContainer";
+import hardCodedSessions from "../sessionsdata.json";
 
 function Calendar() {
   const days = ["S", "M", "T", "W", "T", "F", "S"];
   const currentDate = dayjs();
   const [today, setToday] = useState(currentDate);
   const [selectedDate, setSelectedDate] = useState(currentDate);
+  const [sessions, setSessions] = useState(hardCodedSessions);
 
   //   const days = [
   //     "Saturday",
@@ -76,13 +78,19 @@ function Calendar() {
                   setSelectedDate={setSelectedDate}
                   currentMonth={currentMonth}
                   today={today}
+                  sessions={sessions}
+                  setSessions={setSessions}
                 />
               );
             }
           )}
         </div>
       </div>
-      <BookingInfoContainer selectedDate={selectedDate} />
+      <BookingInfoContainer
+        sessions={sessions}
+        setSessions={setSessions}
+        selectedDate={selectedDate}
+      />
     </div>
   );
 }

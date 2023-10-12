@@ -2,7 +2,6 @@ import React from "react";
 import conditions from "../utils/conditions";
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import NightlightRoundSharpIcon from "@mui/icons-material/NightlightRoundSharp";
-import sessions from "../sessionsdata.json";
 
 function DateBox({
   index,
@@ -11,6 +10,8 @@ function DateBox({
   setSelectedDate,
   currentMonth,
   today,
+  sessions,
+  setSessions,
 }) {
   const stringDate = date.format("DD-MM-YYYY");
   const existingSessions = sessions.filter(
