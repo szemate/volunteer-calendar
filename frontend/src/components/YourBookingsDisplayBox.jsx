@@ -25,6 +25,11 @@ function YourBookingsDisplayBox({
                 <li key={index}>
                   You are booked for {session.formatted_date}{" "}
                   {session.session_type} session
+                  <CancelBookingButton
+                    selectedSession={session}
+                    allSessions={sessions}
+                    setSessions={setSessions}
+                  />
                 </li>
               ))
           : ""}
