@@ -19,13 +19,9 @@ export default function ConfirmationDialogueBoxBest({
         session.volunteer_id = selectedVolunteer.id;
         session.volunteer_first_name = selectedVolunteer.first_name;
         session.volunteer_last_name = selectedVolunteer.last_name;
-        console.log("found session -->", session);
       }
       return session;
     });
-    console.log("session id -->", sessionId);
-    console.log("vol id -->", selectedVolunteer.id);
-    console.log("updated sessions -->", updatedSessions);
     setSessions(updatedSessions);
     setOpen(false);
   }
