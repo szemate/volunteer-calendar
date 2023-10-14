@@ -23,13 +23,13 @@ function SessionStatusBox({
       {matchingSessions.length > 0 &&
         matchingSessions.map((session, index) => (
           <div key={index}>
-            <p>
+            <div>
               {session.volunteer_id != null ? (
                 `${capitalizeFirstLetter(session.session_type)}- ${
                   session.volunteer_first_name
                 } ${session.volunteer_last_name} has booked this session`
               ) : (
-                <>
+                <div>
                   {capitalizeFirstLetter(session.session_type)}- This session is
                   available to book
                   <ConfirmationDialogueBoxBest
@@ -39,9 +39,9 @@ function SessionStatusBox({
                     sessions={sessions}
                     setSessions={setSessions}
                   />
-                </>
+                </div>
               )}
-            </p>
+            </div>
           </div>
         ))}
     </div>
@@ -56,3 +56,14 @@ export default SessionStatusBox;
 // if the selectedDate exist in the sessions data  then give the info about the session status:
 // - if it a volunteer_id exist then say volunteer_name booked this session
 // - or else this session is available to book
+
+// <div>
+//     <p>Session Status...</p>
+//     <p>No sessions exist</p>
+//     <div>
+//         <p>Volunteer name has booked this session</p>
+//         <p>This session is available to book
+//             <ConfirmationDialogueBoxBest />
+//     </div>
+//     </p>
+// </div>
