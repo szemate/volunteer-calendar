@@ -1,17 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { generateDate, months } from "../utils/generateDate";
 import dayjs from "dayjs";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import DateBox from "./DateBox";
 import BookingInfoContainer from "./BookingInfoContainer";
-import hardCodedSessions from "../sessionsdata.json";
+// import sessionsData from "../sessionsdata.json";
+import { baseUrl } from "../config";
 
 function Calendar() {
   const days = ["S", "M", "T", "W", "T", "F", "S"];
   const currentDate = dayjs();
   const [today, setToday] = useState(currentDate);
   const [selectedDate, setSelectedDate] = useState(currentDate);
-  const [sessions, setSessions] = useState(hardCodedSessions);
+  const [sessions, setSessions] = useState([]);
+
+  useEffect(() => {
+    console.log("baseURL", baseUrl);
+    fetch(`${baseUrl}/sessions`)
+      .then((response) => response.json())
+      .then((data) => {
+        setSessions(data);
+      });
+  }, []);
 
   //   const days = [
   //     "Saturday",
