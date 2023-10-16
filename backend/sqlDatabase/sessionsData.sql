@@ -1,11 +1,3 @@
-DROP TABLE IF EXISTS sessions CASCADE;
-
-CREATE TABLE sessions(
-    id serial PRIMARY KEY,
-    date date NOT NULL,
-    session_type varchar(25) NOT NULL
-);
-
 INSERT INTO sessions(date, session_type)
     VALUES ('2023-10-01', 'morning');
 
@@ -191,16 +183,3 @@ INSERT INTO sessions(date, session_type)
 
 INSERT INTO sessions(date, session_type)
     VALUES ('2023-10-31', 'evening');
-
-SELECT
-    *
-FROM
-    sessions;
-   
-SELECT TO_CHAR(date, 'DD-MM-YYYY') AS formatted_date,
-       TO_CHAR(date, 'Day') AS day,
-       session_type
-    FROM sessions
-    ORDER BY formatted_date;
-
-

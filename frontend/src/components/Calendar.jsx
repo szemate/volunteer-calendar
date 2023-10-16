@@ -4,7 +4,6 @@ import dayjs from "dayjs";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import DateBox from "./DateBox";
 import BookingInfoContainer from "./BookingInfoContainer";
-// import sessionsData from "../sessionsdata.json";
 import { baseUrl } from "../config";
 
 function Calendar() {
@@ -15,7 +14,6 @@ function Calendar() {
   const [sessions, setSessions] = useState([]);
 
   useEffect(() => {
-    console.log("baseURL", baseUrl);
     fetch(`${baseUrl}/sessions`)
       .then((response) => response.json())
       .then((data) => {
@@ -23,18 +21,8 @@ function Calendar() {
       });
   }, []);
 
-  //   const days = [
-  //     "Saturday",
-  //     "Sunday",
-  //     "Monday",
-  //     "Tuesday",
-  //     "Wednesday",
-  //     "Thursday",
-  //     "Friday",
-  //   ];
-
   return (
-    <div className="flex flex-col lg:flex-row sm:mx-auto  sm:mt-5 sm:gap-1 grow items-start">
+    <div className="flex flex-col lg:flex-row sm:mx-auto sm:mt-5 sm:gap-1 grow items-start">
       <div className="w-96 sm:w-full lg:w-4/5">
         {/* displaying the month and year*/}
         <div className="flex justify-between px-6 ">
@@ -47,7 +35,7 @@ function Calendar() {
               className="w-5 h-5 cursor-pointer"
               onClick={() => setToday(today.month(today.month() - 1))}
             />
-            {/* button taking us to be today */}
+            {/* button taking us to today */}
             <p
               className="cursor-pointer"
               onClick={() => {

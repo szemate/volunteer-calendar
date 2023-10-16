@@ -1,13 +1,3 @@
-DROP TABLE IF EXISTS bookings;
-
-CREATE TABLE bookings(
-    id serial PRIMARY KEY,
-    session_id integer,
-    volunteer_id integer,
-    FOREIGN KEY (volunteer_id) REFERENCES volunteers(id),
-    FOREIGN KEY (session_id) REFERENCES sessions(id)
-);
-
 INSERT INTO bookings (session_id, volunteer_id)
     VALUES (1, 9);
 
@@ -110,15 +100,3 @@ INSERT INTO bookings (session_id, volunteer_id)
 INSERT INTO bookings (session_id, volunteer_id)
     VALUES (57, 7);
    
-   
-SELECT * FROM bookings;
-
-SELECT TO_CHAR(date, 'DD-MM-YYYY') AS formatted_date,
-       TO_CHAR(date, 'Day') AS day,
-       session_type, b.id AS booking_id, b.volunteer_id  AS volunteer_id,
-       v.first_name AS volunteer_first_name, v.last_name as volunteer_last_name
-      FROM sessions s LEFT JOIN bookings b ON (s.id = b.session_id)
-      FULL OUTER JOIN volunteers v ON (b.volunteer_id = v.id)
-      ORDER BY formatted_date, session_type desc;
-    
-    
