@@ -9,7 +9,7 @@ function YourBookingsDisplayBox({
   setSelectedVolunteer,
 }) {
   return (
-    <div className="p-3 sm:p-4 lg:p-4  bg-gradient-to-br from-deep-orange-50 to-deep-orange-200">
+    <div className="px-8 p-3 sm:p-4 bg-red-800 text-white font-bold sm:px-12 lg:text-lg">
       <p>See your booked session(s):</p>
       <VolunteerDropDownBest
         selectedVolunteer={selectedVolunteer}

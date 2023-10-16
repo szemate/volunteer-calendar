@@ -18,7 +18,7 @@ export default function VolunteerDropDownBest({
             Assigned to
           </Listbox.Label> */}
           <div className="relative mt-2">
-            <Listbox.Button className="relative w-full cursor-default rounded-md bg-deep-orange-50 py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-deep-orange-500 sm:text-sm sm:leading-6 my-3">
+            <Listbox.Button className="relative w-full cursor-default rounded-md bg-deep-orange-50 py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-deep-orange-200 sm:text-sm sm:leading-6 my-3">
               {selectedVolunteer ? (
                 <span className="flex items-center">
                   <img

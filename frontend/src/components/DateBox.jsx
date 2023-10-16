@@ -1,5 +1,5 @@
 import React from "react";
-import conditions from "../utils/conditions";
+import conditionalClasses from "../utils/conditionalClasses";
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import NightlightRoundSharpIcon from "@mui/icons-material/NightlightRoundSharp";
 
@@ -27,8 +27,8 @@ function DateBox({
     <div>
       <div
         key={index}
-        className={conditions(
-          "h-14 w-12 hover:bg-black hover:text-white transition-all cursor-pointer border text-sm grid grid-cols-2 border-spacing-1 sm:border p-1 lg:p-2 sm:h-15 sm:w-14 lg:h-20 lg:w-20",
+        className={conditionalClasses(
+          "h-14 w-12 hover:bg-black hover:text-white transition-all cursor-pointer border border-blue-gray-100 text-sm grid grid-cols-2 border-spacing-1 sm:border p-1 lg:p-2 sm:h-15 sm:w-14 lg:h-20 lg:w-19 lg:text-lg",
           currentMonth ? "" : "text-gray-400",
           today ? "bg-red-400 text-white" : "",
           selectedDate.toDate().toDateString() === date.toDate().toDateString()
@@ -52,7 +52,7 @@ function DateBox({
             ) : (
               <LightModeRoundedIcon
                 sx={{
-                  color: "yellow",
+                  color: "orange",
                 }}
                 fontSize="small"
               />

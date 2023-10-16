@@ -22,11 +22,11 @@ function Calendar() {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row sm:mx-auto sm:mt-5 sm:gap-1 grow items-start">
-      <div className="w-96 sm:w-full lg:w-4/5">
+    <div className="flex flex-col lg:flex-row sm:mx-auto sm:mt-5 sm:gap-1 grow items-center lg:m-0">
+      <div className="w-96 sm:w-full sm:p-2 sm:px-16 bg-blue-gray-50 py-2 lg:px-0">
         {/* displaying the month and year*/}
         <div className="flex justify-between px-6 ">
-          <p className="font-semibold">
+          <p className="font-semibold lg:text-xl">
             {months[today.month()]}, {today.year()}
           </p>
           <div className="flex items-center gap-5">
@@ -37,7 +37,7 @@ function Calendar() {
             />
             {/* button taking us to today */}
             <p
-              className="cursor-pointer"
+              className="cursor-pointer bg-red-400 p-2 text-white lg:text-xl"
               onClick={() => {
                 setToday(currentDate);
               }}

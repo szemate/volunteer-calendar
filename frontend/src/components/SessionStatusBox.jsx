@@ -15,7 +15,7 @@ function SessionStatusBox({
   );
   console.log("selected date in Status box", selectedDate);
   return (
-    <div className="p-2 lg:p-4 sm:p-4 bg-gradient-to-tl from-deep-orange-50 to-deep-orange-200">
+    <div className="px-8 sm:px-12 sm:p-4 bg-red-200 lg:text-lg">
       <p className="font-semibold py-2 pb-3">
         Sessions Status for {selectedDate.toDate().toDateString()}:
       </p>
