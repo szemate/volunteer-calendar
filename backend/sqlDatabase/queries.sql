@@ -1,12 +1,13 @@
 SELECT * FROM volunteers;
 
 SELECT * FROM sessions;
+
    
 SELECT TO_CHAR(date, 'DD-MM-YYYY') AS formatted_date,
        TO_CHAR(date, 'Day') AS day,
        session_type
     FROM sessions
-    ORDER BY formatted_date;
+    ORDER BY date;
 
 SELECT * FROM bookings;
 
