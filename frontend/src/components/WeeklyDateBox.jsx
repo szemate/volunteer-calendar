@@ -3,12 +3,12 @@ import conditionalClasses from "../utils/conditionalClasses";
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import NightlightRoundSharpIcon from "@mui/icons-material/NightlightRoundSharp";
 
-function DateBox({
+function WeeklyDateBox({
   index,
   date,
   selectedDate,
   setSelectedDate,
-  currentMonth,
+  currentPeriod,
   today,
   sessions,
 }) {
@@ -22,14 +22,15 @@ function DateBox({
   const existingEveningSession = existingSessions.find(
     (session) => session.session_type === "evening"
   );
-
+  console.log("today", today);
+  console.log("date", date);
   return (
-    <div>
+    <div key={index} className="h-14 border grid place-content-center">
       <div
         key={index}
         className={conditionalClasses(
-          "h-14 w-12 hover:bg-black hover:text-white transition-all cursor-pointer border border-blue-gray-100 text-sm grid grid-cols-2 border-spacing-1 sm:border p-1 sm:h-15 sm:w-20 lg:h-24 lg:w-19 lg:text-lg lg:p-1 lg:my-1 lg:mx-4",
-          currentMonth ? "" : "text-gray-400",
+          "h-14 w-12 hover:bg-black hover:text-white transition-all cursor-pointer border border-blue-gray-100 text-sm grid grid-cols-2 border-spacing-1 sm:border p-1 sm:h-15 sm:w-20 lg:h-15 lg:w-20 lg:text-lg lg:p-2 lg:my-1 lg:mx-2",
+          date < today ? "" : "text-gray-400",
           today ? "bg-red-400 text-white" : "",
           selectedDate.toDate().toDateString() === date.toDate().toDateString()
             ? "bg-black text-white"
@@ -81,4 +82,4 @@ function DateBox({
   );
 }
 
-export default DateBox;
+export default WeeklyDateBox;

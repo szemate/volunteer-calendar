@@ -1,4 +1,4 @@
-plan for DateBox:
+plan for MonthlyDateBox:
 
 we are mapping through the dates and creating a date box for each date, we are passing in a date value. So each date box contains a reference to the date that we generated. Knowing that we can compare the date that is passed to our date box with dates from the sessions data
 

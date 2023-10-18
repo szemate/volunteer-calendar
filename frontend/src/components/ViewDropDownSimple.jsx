@@ -1,4 +1,3 @@
-
 import { React, useState } from "react";
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
@@ -7,7 +6,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import volunteers from "../volunteersdata.json";
 
-function VolunteerDropDownSimple() {
+function ViewDropDownSimple() {
   const [selectedVolunteerId, setSelectedVolunteerId] = useState(0);
 
   const onVolunteerChange = (event) => {
@@ -29,7 +28,6 @@ function VolunteerDropDownSimple() {
               <MenuItem key={volunteer.id} value={volunteer.id}>
                 {volunteer.first_name} {volunteer.last_name}
               </MenuItem>
-
             );
           })}
         </Select>
@@ -38,7 +36,7 @@ function VolunteerDropDownSimple() {
   );
 }
 
-export default VolunteerDropDownSimple;
+export default ViewDropDownSimple;
 
 // import { Select, Option } from "@material-tailwind/react";
 

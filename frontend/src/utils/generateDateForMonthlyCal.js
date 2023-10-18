@@ -1,6 +1,6 @@
 import dayjs from "dayjs";
 
-export const generateDate = (
+export const generateDateForMonthlyCal = (
   month = dayjs().month(),
   year = dayjs().year()
 ) => {

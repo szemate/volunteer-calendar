@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { generateDate, months } from "../utils/generateDate";
+import { generateDateForMonthlyCal, months } from "../utils/generateDateForMonthlyCal";
 import dayjs from "dayjs";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
-import DateBox from "./DateBox";
+import MonthlyDateBox from "./MonthlyDateBox";
 import BookingInfoContainer from "./BookingInfoContainer";
 import { baseUrl } from "../config";
 
-function Calendar() {
+function MonthlyCalendar() {
   const days = ["S", "M", "T", "W", "T", "F", "S"];
   const currentDate = dayjs();
   const [today, setToday] = useState(currentDate);
@@ -63,12 +63,12 @@ function Calendar() {
             );
           })}
         </div>
-        {/* generating date in the calendar */}
-        <div className="w-full grid grid-cols-7 px-8 ">
-          {generateDate(today.month(), today.year()).map(
+        {/* generating date in the monthly calendar */}
+        <div className="w-full grid grid-cols-7 px-8">
+          {generateDateForMonthlyCal(today.month(), today.year()).map(
             ({ date, currentMonth, today }, index) => {
               return (
-                <DateBox
+                <MonthlyDateBox
                   key={index}
                   index={index}
                   date={date}
@@ -93,4 +93,4 @@ function Calendar() {
   );
 }
 
-export default Calendar;
+export default MonthlyCalendar;
