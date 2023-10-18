@@ -22,8 +22,8 @@ function MonthlyCalendar() {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row sm:mx-auto sm:mt-5 sm:gap-1 grow items-center lg:items-start lg:mt-2">
-      <div className="w-full py-2 bg-blue-gray-50">
+    <div className="flex flex-col lg:flex-row sm:mx-auto sm:mt-5 sm:gap-1 grow items-center lg:items-start lg:mt-2 lg:p-2">
+      <div className="w-full py-2 bg-blue-gray-50 lg:p-4">
         {/* displaying the month and year*/}
         <div className="flex justify-between px-6 ">
           <p className="font-semibold lg:text-xl">

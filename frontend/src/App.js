@@ -5,7 +5,7 @@ import WeeklyCalendar from "./components/WeeklyCalendar";
 
 function App() {
   return (
-    <div className="flex flex-col items-center bg-gradient-to-t from-blue-gray-200 via-blue-gray-100 to-blue-gray-200 min-h-screen">
+    <div className="flex flex-col items-center bg-gradient-to-tl from-gray-900 via-gray-600 to-blue-gray-900 min-h-screen">
       <Header />
       <MonthlyCalendar />
       <WeeklyCalendar />

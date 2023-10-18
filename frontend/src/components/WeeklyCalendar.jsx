@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { generateDateForWeeklyCal, months } from "../utils/generateDateForWeeklyCal";
+import {
+  generateDateForWeeklyCal,
+  months,
+} from "../utils/generateDateForWeeklyCal";
 import dayjs from "dayjs";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import WeeklyDateBox from "./WeeklyDateBox";
@@ -22,42 +25,42 @@ function WeeklyCalendar() {
   }, []);
   const numberOfWeek = 4;
   return (
-    <div className="flex flex-col lg:flex-row sm:mx-auto sm:mt-5 sm:gap-1 grow items-center lg:items-start lg:mt-2">
-      <div className="w-full py-2 bg-blue-gray-50">
-        <div>
+    <div className="flex flex-col lg:flex-row sm:mx-auto sm:mt-5 sm:gap-1 grow items-center lg:items-start lg:m-4 lg:p-2">
+      <div className="w-full py-2 lg:p-6  bg-blue-gray-50">
+        <div className=" flex flex-row justify-between">
           {/* displaying the months and year */}
           <div className="flex px-6 font-semibold lg:text-xl">
             <div>
-              {months[today.month()]}, {today.year()} /
-            </div>
-            <div>
-              {months[today.add(numberOfWeek, "week").month()]},{" "}
-              {today.add(numberOfWeek, "week").year()}
+              <div>
+                {months[today.month()]} {today.year()} /{" "}
+                {months[today.add(numberOfWeek, "week").month()]}{" "}
+                {today.add(numberOfWeek, "week").year()}
+              </div>
             </div>
           </div>
-        </div>
-        <div className="flex items-center gap-5">
-          {/* Button showing previous month */}
-          <GrFormPrevious
-            className="w-5 h-5 cursor-pointer"
-            onClick={() => setToday(today.month(today.month() - 1))}
-          />
-          {/* button taking us to today */}
-          <p
-            className="cursor-pointer bg-red-400 p-2 text-white lg:text-xl"
-            onClick={() => {
-              setToday(currentDate);
-            }}
-          >
-            Today
-          </p>
-          {/* Button showing previous month */}
-          <GrFormNext
-            className="w-5 h-5 cursor-pointer"
-            onClick={() => {
-              setToday(today.month(today.month() + 1));
-            }}
-          />
+          <div className="flex items-center gap-5">
+            {/* Button showing previous month */}
+            <GrFormPrevious
+              className="w-5 h-5 cursor-pointer"
+              onClick={() => setToday(today.month(today.month() - 1))}
+            />
+            {/* button taking us to today */}
+            <p
+              className="cursor-pointer bg-red-400 p-2 text-white lg:text-xl"
+              onClick={() => {
+                setToday(currentDate);
+              }}
+            >
+              Today
+            </p>
+            {/* Button showing previous month */}
+            <GrFormNext
+              className="w-5 h-5 cursor-pointer"
+              onClick={() => {
+                setToday(today.month(today.month() + 1));
+              }}
+            />
+          </div>
         </div>
 
         {/* rendering the days in the weekly calendar*/}

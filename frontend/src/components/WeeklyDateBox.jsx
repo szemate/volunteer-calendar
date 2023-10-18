@@ -25,11 +25,11 @@ function WeeklyDateBox({
   console.log("today", today);
   console.log("date", date);
   return (
-    <div key={index} className="h-14 border grid place-content-center">
+    <div key={index} className="h-14 border grid place-content-center lg:h-24">
       <div
         key={index}
         className={conditionalClasses(
-          "h-14 w-12 hover:bg-black hover:text-white transition-all cursor-pointer border border-blue-gray-100 text-sm grid grid-cols-2 border-spacing-1 sm:border p-1 sm:h-15 sm:w-20 lg:h-15 lg:w-20 lg:text-lg lg:p-2 lg:my-1 lg:mx-2",
+          "h-14 w-11 hover:bg-black hover:text-white transition-all cursor-pointer border border-blue-gray-100 text-sm grid grid-cols-2 border-spacing-1 sm:border p-1 sm:h-16 sm:w-20 lg:h-24 lg:w-24 lg:text-lg lg:m-4",
           date < today ? "" : "text-gray-400",
           today ? "bg-red-400 text-white" : "",
           selectedDate.toDate().toDateString() === date.toDate().toDateString()

@@ -28,7 +28,7 @@ function MonthlyDateBox({
       <div
         key={index}
         className={conditionalClasses(
-          "h-14 w-12 hover:bg-black hover:text-white transition-all cursor-pointer border border-blue-gray-100 text-sm grid grid-cols-2 border-spacing-1 sm:border p-1 sm:h-15 sm:w-20 lg:h-24 lg:w-19 lg:text-lg lg:p-1 lg:my-1 lg:mx-4",
+          "h-14 w-11 hover:bg-black hover:text-white transition-all cursor-pointer border border-blue-gray-100 text-sm grid grid-cols-2 border-spacing-1 sm:border p-1 sm:h-16 sm:w-20 lg:h-24 lg:w-24 lg:text-lg lg:p-1 lg:mx-4",
           currentMonth ? "" : "text-gray-400",
           today ? "bg-red-400 text-white" : "",
           selectedDate.toDate().toDateString() === date.toDate().toDateString()
