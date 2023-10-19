@@ -1,18 +1,20 @@
 import React from "react";
+import dayjs from "dayjs";
 import conditionalClasses from "../utils/conditionalClasses";
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import NightlightRoundSharpIcon from "@mui/icons-material/NightlightRoundSharp";
 
 function WeeklyDateBox({
-  index,
   date,
   selectedDate,
   setSelectedDate,
-  currentPeriod,
-  today,
   sessions,
+  setSessions
 }) {
+  const currentDate = dayjs().startOf("day");
+  const endDate = currentDate.add(4, "week");
   const stringDate = date.format("DD-MM-YYYY");
+
   const existingSessions = sessions.filter(
     (session) => stringDate === session.formatted_date
   );
@@ -22,19 +24,15 @@ function WeeklyDateBox({
   const existingEveningSession = existingSessions.find(
     (session) => session.session_type === "evening"
   );
-  console.log("today", today);
-  console.log("date", date);
+
   return (
-    <div key={index} className="h-14 border grid place-content-center lg:h-24">
+    <div className="h-14 border grid place-content-center lg:h-24">
       <div
-        key={index}
         className={conditionalClasses(
           "h-14 w-11 hover:bg-black hover:text-white transition-all cursor-pointer border border-blue-gray-100 text-sm grid grid-cols-2 border-spacing-1 sm:border p-1 sm:h-16 sm:w-20 lg:h-24 lg:w-24 lg:text-lg lg:m-4",
-          date < today ? "" : "text-gray-400",
-          today ? "bg-red-400 text-white" : "",
-          selectedDate.toDate().toDateString() === date.toDate().toDateString()
-            ? "bg-black text-white"
-            : ""
+          date >= currentDate && date < endDate ? "" : "text-gray-400",
+          date.isSame(currentDate, "day") ? "bg-red-400 text-white" : "",
+          date.isSame(selectedDate, "day") ? "bg-black text-white" : ""
         )}
         onClick={() => {
           setSelectedDate(date);

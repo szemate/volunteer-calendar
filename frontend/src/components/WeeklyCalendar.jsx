@@ -11,10 +11,11 @@ import { baseUrl } from "../config";
 
 function WeeklyCalendar() {
   const days = ["S", "M", "T", "W", "T", "F", "S"];
-  const currentDate = dayjs();
-  const [today, setToday] = useState(currentDate);
+  const currentDate = dayjs().startOf("day");
+  const [startDate, setStartDate] = useState(currentDate);
   const [selectedDate, setSelectedDate] = useState(currentDate);
   const [sessions, setSessions] = useState([]);
+  const endDate = startDate.add(4, "week");
 
   useEffect(() => {
     fetch(`${baseUrl}/sessions`)
@@ -23,7 +24,7 @@ function WeeklyCalendar() {
         setSessions(data);
       });
   }, []);
-  const numberOfWeek = 4;
+
   return (
     <div className="flex flex-col lg:flex-row sm:mx-auto sm:mt-5 sm:gap-1 grow items-center lg:items-start lg:m-4 lg:p-2">
       <div className="w-full py-2 lg:p-6  bg-blue-gray-50">
@@ -32,9 +33,8 @@ function WeeklyCalendar() {
           <div className="flex px-6 font-semibold lg:text-xl">
             <div>
               <div>
-                {months[today.month()]} {today.year()} /{" "}
-                {months[today.add(numberOfWeek, "week").month()]}{" "}
-                {today.add(numberOfWeek, "week").year()}
+                {months[startDate.month()]} {startDate.year()} /{" "}
+                {months[endDate.month()]} {endDate.year()}
               </div>
             </div>
           </div>
@@ -42,23 +42,19 @@ function WeeklyCalendar() {
             {/* Button showing previous month */}
             <GrFormPrevious
               className="w-5 h-5 cursor-pointer"
-              onClick={() => setToday(today.month(today.month() - 1))}
+              onClick={() => setStartDate(startDate.subtract(4, "week"))}
             />
             {/* button taking us to today */}
             <p
               className="cursor-pointer bg-red-400 p-2 text-white lg:text-xl"
-              onClick={() => {
-                setToday(currentDate);
-              }}
+              onClick={() => setStartDate(currentDate)}
             >
               Today
             </p>
             {/* Button showing previous month */}
             <GrFormNext
               className="w-5 h-5 cursor-pointer"
-              onClick={() => {
-                setToday(today.month(today.month() + 1));
-              }}
+              onClick={() => setStartDate(startDate.add(4, "week"))}
             />
           </div>
         </div>
@@ -75,15 +71,12 @@ function WeeklyCalendar() {
         </div>
         {/* rendering the dates in the weekly calendar */}
         <div className="w-full grid grid-cols-7 px-8">
-          {generateDateForWeeklyCal().map(
-            ({ date, currentMonth, nextMonth, today }, index) => {
+          {generateDateForWeeklyCal(startDate).map(
+            (date, index) => {
               return (
                 <WeeklyDateBox
                   key={index}
-                  index={index}
                   date={date}
-                  currentMonth={currentMonth}
-                  today={today}
                   selectedDate={selectedDate}
                   setSelectedDate={setSelectedDate}
                   sessions={sessions}

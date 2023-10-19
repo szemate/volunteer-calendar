@@ -1,45 +1,30 @@
 import dayjs from "dayjs";
 
-export const generateDateForWeeklyCal = (
-  month = dayjs().month(),
-  year = dayjs().year()
-) => {
-  const currentDate = dayjs();
-  const lastDateOfCurrentMonth = dayjs().year(year).month(month).endOf("month");
-  const numberOfWeek = 4;
-  const dateAfterFourWeeksFromToday = dayjs()
-    .year(year)
-    .month(month)
-    .add(numberOfWeek, "week");
-  const firstDateOfMonth = dayjs().year(year).month(month).startOf("month");
+export const generateDateForWeeklyCal = (startDate) => {
+  const month = startDate.month();
+  const year = startDate.year();
+
+  const lastDateOfCurrentMonth = startDate.endOf("month");
+  const dateAfterFourWeeksFromToday = startDate.add(4, "week");
+  const firstDateOfMonth = startDate.startOf("month");
   const firstDateOfNextMonth = firstDateOfMonth.add(1, "month");
-  // let currentPeriod =[];
 
   const arrayOfDatesForWeeklyCal = [];
 
   console.log("date after 4 weeks from today -->", dateAfterFourWeeksFromToday);
   console.log("lastDateOfCurrentMonth -->", lastDateOfCurrentMonth);
-  console.log("currentDate -->", currentDate);
+  console.log("currentDate -->", startDate);
 
   // generate prefix dates
 
-  for (let i = 0; i < currentDate.day(); i++) {
-    arrayOfDatesForWeeklyCal.push({
-      currentPeriod: false,
-      date: currentDate.day(i),
-    });
+  for (let i = 0; i < startDate.day(); i++) {
+    arrayOfDatesForWeeklyCal.push(startDate.day(i));
   }
 
   // generate the upcoming dates from this month
 
-  for (let i = currentDate.date(); i <= lastDateOfCurrentMonth.date(); i++) {
-    arrayOfDatesForWeeklyCal.push({
-      date: currentDate.date(i),
-      currentPeriod: true,
-      today:
-        currentDate.date(i).toDate().toDateString() ===
-        dayjs().toDate().toDateString(),
-    });
+  for (let i = startDate.date(); i <= lastDateOfCurrentMonth.date(); i++) {
+    arrayOfDatesForWeeklyCal.push(startDate.date(i));
   }
 
   // generate the upcoming dates from next month
@@ -49,49 +34,20 @@ export const generateDateForWeeklyCal = (
     i < dateAfterFourWeeksFromToday.date();
     i++
   ) {
-    arrayOfDatesForWeeklyCal.push({
-      date: firstDateOfNextMonth.date(i),
-      currentPeriod: true,
-    });
+    arrayOfDatesForWeeklyCal.push(firstDateOfNextMonth.date(i));
   }
 
   // generate suffix dates
 
-  const remainingDates = (numberOfWeek + 1 * 7) - arrayOfDatesForWeeklyCal.length;
+  const remainingDates = (4 + 1 * 7) - arrayOfDatesForWeeklyCal.length;
 
   for (
     let i = dateAfterFourWeeksFromToday.date();
     i < dateAfterFourWeeksFromToday.date() + remainingDates;
     i++
   ) {
-    arrayOfDatesForWeeklyCal.push({
-      date: dateAfterFourWeeksFromToday.date(i),
-      currentPeriod: false,
-    });
+    arrayOfDatesForWeeklyCal.push(dateAfterFourWeeksFromToday.date(i));
   }
-
-  // // generate current period
-
-  // for (let i = currentDate.date(); i <= lastDateOfCurrentMonth.date(); i++) {
-  //   currentPeriod.push({
-  //     date: currentDate.date(i),
-  //     currentPeriod: true,
-  //     today:
-  //       currentDate.date(i).toDate().toDateString() ===
-  //       dayjs().toDate().toDateString(),
-  //   });
-  // }
-
-  // for (
-  //   let i = firstDateOfNextMonth.date();
-  //   i < dateAfterFourWeeksFromToday.date();
-  //   i++
-  // ) {
-  //   currentPeriod.push({
-  //     date: firstDateOfNextMonth.date(i),
-  //     currentPeriod: true,
-  //   });
-  // }
 
   return arrayOfDatesForWeeklyCal;
 };
